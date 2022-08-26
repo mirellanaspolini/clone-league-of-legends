@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 12px;
+    cursor: default;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    outline: none;
+}
+
+a:hover {
+    color: inherit;
+}
+
+.main {
+    display: flex;
+    width: 1024px;
+    height: 576px;
+    margin: auto;
+}

@@ -1,0 +1,117 @@
+body {
+    overflow: hidden;
+}
+
+.main {
+    height: 509px;
+    padding-top: 50px;
+    background-image: url(/client/img/Group\ 5.png);
+    background-size: cover;
+}
+
+p,
+label {
+    margin: 2px;
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 12px;
+    color: #b8b8b8;
+}
+
+.grid-campeoes {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(4, minmax(130px, 1fr));
+    grid-template-rows: 150px 150px 150px 150px;
+    grid-auto-rows: 150px;
+    gap: 0.5rem;
+    padding: 1rem;
+    overflow-y: scroll;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+}
+
+/* input */
+.menu-filtros {
+    padding: 1rem 0rem 0rem 1.6rem;
+}
+
+input[type="radio"] {
+    vertical-align: middle;
+}
+
+select,
+input[type="search"] {
+    font-size: 12px;
+    font-family: Roboto;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 1px;
+    background-color: #060915;
+    border: 1px solid #91753a;
+}
+
+input[type="radio"] {
+    transform: rotate(45deg);
+}
+
+input[type="radio"]:checked::after {
+    content: "";
+    display: block;
+    width: 5.5px;
+    height: 5.5px;
+    background-color: #c89b3c;
+    border-width: 0 2px 2px 0;
+    margin: 1px 1px;
+}
+
+input[type="checkbox"]:checked::after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 8px;
+    border: 1px solid #c89b3c;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    margin: -2px 2px;
+}
+
+#dasds,
+input[type="search"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 30px;
+    width: 150px;
+    background-color: #060915;
+    border: 1px solid #a8853a;
+    color: #f5f5dc;
+    outline: none;
+}
+
+#dasds {
+    appearance: none;
+    border: 1px solid #a8853a;
+    padding: 5px;
+    height: 30px;
+}
+
+fieldset {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    line-height: 1.7;
+}
+
+aside hr {
+    margin: 8px;
+}

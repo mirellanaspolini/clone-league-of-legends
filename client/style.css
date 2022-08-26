@@ -1,0 +1,448 @@
+@import "../global.css";
+@import "../variaveis.css";
+
+/* IMPORTANDO FONTES EXTERNAS */
+@font-face {
+    font-family: "Beaufort for LOL";
+    font-size: 700;
+    src: url("../BeaufortForLOL/beaufortforlol-heavy.otf");
+}
+
+@font-face {
+    font-family: "Beaufort for LOL";
+    font-size: 500;
+    src: url("../BeaufortForLOL/beaufortforlol-medium.otf");
+}
+
+.main {
+    background-color: var(--fundo-principal);
+    font-family: "Beaufort for LOL";
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.main.client {
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 223px;
+    grid-template-areas:
+        "header header"
+        "geral social";
+    grid-template-rows: max-content;
+}
+
+.geral {
+    width: 100%;
+    height: 100%;
+    background-color: var(--fundo-principal);
+    grid-area: geral;
+    overflow: hidden;
+}
+
+/* social */
+.social {
+    max-width: 220px;
+    height: 100%;
+    background-color: var(--fundo-principal);
+    grid-area: social;
+}
+
+header {
+    grid-area: header;
+    /* width: 1024px; */
+    height: 68px;
+    padding: 0 1rem;
+    border-bottom: 1px solid #343d44;
+    border-top: 3px solid #6f5d39;
+    background-color: var(--fundo-principal);
+}
+
+header a,
+header h6,
+header img:nth-of-type(2) {
+    margin: 0 0.5rem;
+}
+
+header img:nth-of-type(1) {
+    margin-right: 0.6rem;
+}
+
+header .icones img {
+    margin: 0 0.5rem;
+}
+
+.icones {
+    margin-left: 90px;
+}
+
+header h6 {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+header button {
+    height: 100%;
+    color: #d2c195;
+    background-color: transparent;
+    border: none;
+}
+
+header button:hover {
+    transition: 3s;
+    background: linear-gradient(transparent, #c2bbb24d);
+}
+
+.botao-inicio {
+    position: relative;
+}
+
+.ativo {
+    position: relative;
+    background: linear-gradient(transparent, #c2bbb24d);
+}
+
+.ativo::before {
+    content: " ";
+    background-image: url(/client/img/decorador.svg);
+    position: absolute;
+    height: 13px;
+    width: 25px;
+    top: -2px;
+    left: calc(50% - 12.5px);
+}
+
+.header {
+    position: absolute;
+    top: 68px;
+    align-items: center;
+    justify-content: space-between;
+    width: 78.2%;
+    height: 50px;
+    padding: 1.2rem;
+    background: linear-gradient(#010a1bc2, transparent);
+    font-family: "Beaufort for LOL";
+    font-weight: 500;
+    font-size: 12px;
+    color: #d2c195;
+    z-index: 5;
+}
+
+.header-inicio {
+    background: linear-gradient(#010a1bc2, transparent);
+}
+
+.header-destaques,
+.header-campeoes {
+    background-color: #010a13;
+}
+
+.header-destaques-botoes button {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: #3f5996;
+    color: #d2c195;
+    background-color: #1e2328;
+    border: 2px solid #c8a765;
+}
+
+.header-destaques-botoes img {
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    margin-bottom: 2px;
+}
+
+.header-destaques-botoes button:first-of-type,
+.prime button {
+    width: initial;
+    padding: 0.1rem 1rem;
+    border-radius: initial;
+    border: none;
+    background-color: #1e2328;
+    border: 2px solid #c8a765;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #d2c195;
+    margin-top: 0;
+}
+
+.header-destaques li:first-of-type {
+    border-bottom: 1px solid #f0e7cf;
+    color: #f0e7cf;
+}
+
+.header-inicio li:nth-of-type(2) {
+    border-bottom: 1px solid #f0e7cf;
+    color: #f0e7cf;
+}
+
+.header-campeoes li:nth-of-type(2) {
+    border-bottom: 1px solid #f0e7cf;
+    color: #f0e7cf;
+}
+
+.header li:hover {
+    color: #f0e7cf;
+}
+
+.decorador {
+    width: 1px;
+    height: 40px;
+    background-color: rgba(233, 198, 132, 0.274);
+    margin: 0 1.4rem;
+    margin-left: 0.5rem;
+    border-radius: 170%;
+}
+
+.desenvolvido {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    width: 380px;
+    padding: 2rem;
+    border-radius: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur(23px);
+    backdrop-filter: blur(23px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.info-devs {
+    display: flex;
+}
+
+.devs {
+    width: 50%;
+    text-align: center;
+}
+
+.devs h3 {
+    font-size: 20px;
+}
+
+.essencia-azul,
+.rp {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.essencia-azul::before {
+    content: url(./img/essencia-azul.png);
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-left: 2px;
+}
+
+.rp::before {
+    content: url(./img/rp.png);
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    align-items: flex-start;
+    font-weight: 500;
+    color: var(--cor25);
+    overflow-y: scroll;
+}
+
+.btn {
+    width: 100%;
+    padding: 5px 0;
+    border: none;
+    font-family: "Beaufort for LOL";
+    font-weight: 700;
+    font-size: 12px;
+    text-align: left;
+    color: var(--cor22);
+}
+
+.btn:hover,
+.btn:focus {
+    color: var(--cor22);
+}
+
+.social-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 7px 2px;
+}
+
+.social-box p {
+    margin: 0;
+}
+
+.social-box p:last-of-type {
+    font-size: 12px;
+}
+
+.social-img {
+    box-sizing: border-box;
+    height: 100%;
+    border-radius: 50%;
+    border: 3px solid #976f3d;
+}
+
+.status {
+    position: relative;
+}
+
+.offline::before {
+    content: "";
+    background-image: url(./img/offline.svg);
+    background-size: cover;
+    left: -19px;
+    bottom: 4px;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+}
+
+.online::before {
+    content: "";
+    background-image: url(./img/online.svg);
+    background-size: cover;
+    left: -19px;
+    bottom: 4px;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+}
+
+.online {
+    color: #057733;
+}
+
+header .online::before {
+    display: inline-block;
+    background-size: contain;
+    position: initial;
+    margin-right: 3px;
+    vertical-align: top;
+    width: 18px;
+    height: 18px;
+}
+
+.lol-plus::before {
+    content: "";
+    background-image: url(./img/lol-plus.svg);
+    background-size: cover;
+    left: -19px;
+    bottom: 4px;
+    position: absolute;
+    width: 15px;
+    height: 12px;
+}
+
+.azul::before {
+    content: "";
+    background-image: url(./img/em-partida.svg);
+    background-size: cover;
+    left: -19px;
+    bottom: 4px;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+}
+
+.azul {
+    color: var(--cor30);
+}
+
+.ausente::before {
+    content: "";
+    background-image: url(./img/ausente.svg);
+    background-size: cover;
+    left: -19px;
+    bottom: 4px;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+}
+
+.social::-webkit-scrollbar {
+    width: 4px;
+}
+
+.social::-webkit-scrollbar-track {
+    background: var(--cor29);
+}
+
+.social::-webkit-scrollbar-thumb {
+    background-color: var(--cor31);
+    border-radius: 20px;
+    border: 5px solid var(--cor29);
+}
+
+/* LOJA */
+.menu-filtros {
+    max-width: 180px;
+    width: 100%;
+    background-color: transparent;
+}
+
+.card {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 1px;
+    border: 1px solid rgba(128, 128, 128, 0.473);
+    background-color: rgb(0, 13, 24);
+    font-family: Roboto;
+    text-align: center;
+    border-radius: 0;
+}
+
+.card-info-bg {
+    position: absolute;
+    bottom: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 99%;
+    height: 40%;
+    padding: 2px;
+    background: linear-gradient(transparent, #000);
+}
+
+.card-info-bg span {
+    display: flex;
+    gap: 14px;
+}
+
+.card-info-bg span p {
+    color: #ac957e;
+}
+
+.card-info-bg p {
+    color: #fff;
+}
+
+.preco-rp::before {
+    content: url("/client/img/rp-12.png");
+    margin: 6px;
+    vertical-align: middle;
+}
+
+.preco-ea::before {
+    content: url("/client/img/essencia-azul-12.png");
+    vertical-align: middle;
+    margin: 4px;
+    height: 10px;
+}
+
+.grid-destaques::-webkit-scrollbar,
+.grid-campeoes::-webkit-scrollbar {
+    width: 0px;
+    color: #ff69b4;
+}
+

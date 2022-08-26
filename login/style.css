@@ -1,0 +1,306 @@
+@import "../global.css";
+@import "../variaveis.css";
+
+/* MAIN */
+main {
+    position: relative;
+    display: flex;
+    width: 1024px;
+    height: 576px;
+    margin: auto;
+}
+
+/* LOGIN */
+#login {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 360px;
+    padding: 40px;
+    background-color: #fff;
+}
+
+.login-logo {
+    display: block;
+    width: 90px;
+    height: auto;
+    margin: 0 auto 50px;
+}
+
+.login-header {
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.login-input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 18px 8px 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ededed;
+    font-weight: 600;
+}
+
+.login-input_box {
+    position: relative;
+    min-width: 270px;
+}
+
+.login-input_box span {
+    position: absolute;
+    left: 12px;
+    top: 15px;
+    font-size: 10px;
+    font-weight: 700;
+    color: #919191;
+    transition: 0.2s;
+}
+
+.login-input_box input:focus ~ span,
+.login-input_box input:valid ~ span {
+    transform: translateY(-10px) translateX(-4px);
+}
+
+.login-buttons button {
+    width: 31%;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+}
+
+.login-buttons button:first-child {
+    background-color: #1877f2;
+}
+
+.login-buttons button:nth-child(2) {
+    height: 26px;
+    border: 2px solid #f2f2f2;
+    background-color: #fff;
+}
+
+.login-buttons button:last-child {
+    background-color: #000;
+}
+
+.input-checkbox {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+    border-radius: 3px;
+    background-color: #ededed;
+}
+
+.input-checkbox:checked {
+    background-color: #c73033;
+}
+
+.input-checkbox:checked::after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 10px;
+    border: 3px solid #fff;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    margin: 2px 6px;
+}
+
+.login-button {
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background-color: #fff;
+    border-radius: 30%;
+    border-color: #ededed;
+    border-style: solid;
+}
+
+#wallpaper {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    background: url("https://live.staticflickr.com/65535/52277003139_a23861ad0a_k.jpg")
+        no-repeat;
+    background-size: cover;
+    background-position: 40%;
+}
+
+/* Tooltip de avisos */
+.avisos {
+    display: inline-block;
+    position: relative;
+    top: 1rem;
+    left: 1rem !important;
+    border: none;
+    background-color: transparent;
+}
+
+.avisos-texto {
+    position: absolute;
+    top: -5px;
+    left: 105%;
+    width: 330px;
+    padding: 2rem;
+    text-align: start;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 4px;
+    background-color: #fff;
+    /* color: #000; */
+    /* font-size: 12px; */
+    /* z-index: 1; */
+    visibility: hidden;
+}
+
+.avisos-texto p:nth-child(6) {
+    margin-bottom: 30px;
+}
+
+.avisos-texto span {
+    vertical-align: middle;
+    color: #9e9e9e;
+}
+
+.avisos-texto a,
+.login-links {
+    font-weight: 600;
+    font-size: 10px;
+    color: #c1c1c1;
+}
+
+.avisos-texto a:hover,
+.login-links:hover {
+    color: #838383;
+}
+
+/* seta tooltip */
+.avisos-texto::after {
+    content: "";
+    position: absolute;
+    top: 22px;
+    left: -5px;
+    transform: rotate(90deg);
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+    z-index: 5;
+}
+
+.avisos:hover .avisos-texto {
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu-container {
+    top: 1rem;
+    right: 1rem;
+}
+
+.menu-main {
+    top: 1rem;
+    right: 1rem;
+}
+
+.menu-btn {
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 40%;
+    background-color: #1a1a1aa4;
+}
+
+.dropdown-menu {
+    width: 220px;
+    padding: 1.5rem 1.5rem;
+    background: #141414;
+    border-radius: 3px;
+    color: #a1a1a1;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.dropdown-menu li {
+    padding: 4px 8px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.dropdown-menu li:nth-child(3) {
+    margin-bottom: 0;
+}
+
+.dropdown-menu a:hover:first-child,
+.dropdown-menu li:hover:first-child,
+.dropdown-menu a:hover:last-child,
+.dropdown-menu li:hover:last-child {
+    color: #bebebe;
+    background-color: #252525;
+}
+
+.dropdown-menu li:nth-child(2) {
+    color: #636363;
+}
+
+.dropdown-menu li:nth-child(2):hover,
+.dropdown-menu .sessao:hover {
+    color: #636363 !important;
+    background-color: transparent !important;
+}
+
+.mensagem-erro {
+    position: absolute;
+    top: 85px;
+    left: 40px;
+
+    width: 280px;
+    padding: 1rem;
+
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+    font-size: 11px;
+    color: #b513c4;
+
+    border-radius: 2px;
+    background-color: #fff;
+    box-shadow: 3px 4.5px 19px 3px #ddd;
+    z-index: 1;
+    /* visibility: hidden; */
+}
+
+.mensagem-erro::after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+}
+
+.spin {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 360px;
+    height: 576px;
+    background-color: #ffffff;
+    z-index: 4;
+}
+
+.spinner-border {
+    height: 3rem;
+    width: 3rem;
+    border-right-color: #d13639;
+}
