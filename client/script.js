@@ -1,8 +1,5 @@
 var header = document.querySelector(".header");
 var conteudo_geral = document.querySelector(".geral");
-
-var decorador_inicio = document.querySelector(".decorador-inicio");
-
 var botao_inicio = document.querySelector(".botao-inicio");
 var botao_loja = document.querySelector(".botao-loja");
 

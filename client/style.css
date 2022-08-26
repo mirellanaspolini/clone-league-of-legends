@@ -39,17 +39,8 @@
     overflow: hidden;
 }
 
-/* social */
-.social {
-    max-width: 220px;
-    height: 100%;
-    background-color: var(--fundo-principal);
-    grid-area: social;
-}
-
-header {
+.header-client {
     grid-area: header;
-    /* width: 1024px; */
     height: 68px;
     padding: 0 1rem;
     border-bottom: 1px solid #343d44;
@@ -57,39 +48,39 @@ header {
     background-color: var(--fundo-principal);
 }
 
-header a,
-header h6,
-header img:nth-of-type(2) {
+.header-client a,
+.header-client h6,
+.header-client img:nth-of-type(2) {
     margin: 0 0.5rem;
 }
 
-header img:nth-of-type(1) {
+.header-client img:nth-of-type(1) {
     margin-right: 0.6rem;
 }
 
-header .icones img {
-    margin: 0 0.5rem;
-}
-
-.icones {
-    margin-left: 90px;
-}
-
-header h6 {
+.header-client h6 {
     font-size: 14px;
     letter-spacing: 0.5px;
 }
 
-header button {
+.header-client button {
     height: 100%;
     color: #d2c195;
     background-color: transparent;
     border: none;
 }
 
-header button:hover {
+.header-client button:hover {
     transition: 3s;
     background: linear-gradient(transparent, #c2bbb24d);
+}
+
+.icones {
+    margin-left: 90px;
+}
+
+.icones img {
+    margin: 0 0.5rem 0.5rem;
 }
 
 .botao-inicio {
@@ -241,13 +232,18 @@ header button:hover {
     margin-right: 8px;
 }
 
+/* social */
 .social {
+    grid-area: social;
     display: flex;
     flex-direction: column;
-    padding: 0px 10px;
+    align-items: flex-start;
+    max-width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    background-color: var(--fundo-principal);
     font-size: 14px;
     font-family: "Roboto", sans-serif;
-    align-items: flex-start;
     font-weight: 500;
     color: var(--cor25);
     overflow-y: scroll;
@@ -291,95 +287,82 @@ header button:hover {
     border: 3px solid #976f3d;
 }
 
+/* social - status */
 .status {
     position: relative;
-}
-
-.offline::before {
-    content: "";
-    background-image: url(./img/offline.svg);
-    background-size: cover;
-    left: -19px;
-    bottom: 4px;
-    position: absolute;
-    width: 15px;
-    height: 15px;
-}
-
-.online::before {
-    content: "";
-    background-image: url(./img/online.svg);
-    background-size: cover;
-    left: -19px;
-    bottom: 4px;
-    position: absolute;
-    width: 15px;
-    height: 15px;
 }
 
 .online {
     color: #057733;
 }
 
-header .online::before {
-    display: inline-block;
-    background-size: contain;
-    position: initial;
-    margin-right: 3px;
-    vertical-align: top;
-    width: 18px;
-    height: 18px;
-}
-
-.lol-plus::before {
+.online::before {
     content: "";
-    background-image: url(./img/lol-plus.svg);
-    background-size: cover;
+    position: absolute;
     left: -19px;
     bottom: 4px;
-    position: absolute;
-    width: 15px;
-    height: 12px;
-}
-
-.azul::before {
-    content: "";
-    background-image: url(./img/em-partida.svg);
-    background-size: cover;
-    left: -19px;
-    bottom: 4px;
-    position: absolute;
     width: 15px;
     height: 15px;
+    background-size: cover;
+    background-image: url(./img/online.svg);
+}
+
+.header-client .online::before {
+    position: initial;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 3px;
+    vertical-align: top;
+    background-size: contain;
 }
 
 .azul {
     color: var(--cor30);
 }
 
-.ausente::before {
+.azul::before {
     content: "";
-    background-image: url(./img/ausente.svg);
-    background-size: cover;
+    position: absolute;
     left: -19px;
     bottom: 4px;
-    position: absolute;
     width: 15px;
     height: 15px;
+    background-size: cover;
+    background-image: url(./img/em-partida.svg);
 }
 
-.social::-webkit-scrollbar {
-    width: 4px;
+.offline::before {
+    content: "";
+    position: absolute;
+    left: -19px;
+    bottom: 4px;
+    width: 15px;
+    height: 15px;
+    background-size: cover;
+    background-image: url(./img/offline.svg);
 }
 
-.social::-webkit-scrollbar-track {
-    background: var(--cor29);
+.lol-plus::before {
+    content: "";
+    position: absolute;
+    left: -19px;
+    bottom: 4px;
+    width: 15px;
+    height: 12px;
+    background-size: cover;
+    background-image: url(./img/lol-plus.svg);
 }
 
-.social::-webkit-scrollbar-thumb {
-    background-color: var(--cor31);
-    border-radius: 20px;
-    border: 5px solid var(--cor29);
+.ausente::before {
+    content: "";
+    position: absolute;
+    left: -19px;
+    bottom: 4px;
+    width: 15px;
+    height: 15px;
+    background-size: cover;
+    background-image: url(./img/ausente.svg);
 }
 
 /* LOJA */
@@ -440,9 +423,22 @@ header .online::before {
     height: 10px;
 }
 
+/* scrollbars */
 .grid-destaques::-webkit-scrollbar,
 .grid-campeoes::-webkit-scrollbar {
-    width: 0px;
-    color: #ff69b4;
+    width: 0;
 }
 
+.social::-webkit-scrollbar {
+    width: 4px;
+}
+
+.social::-webkit-scrollbar-track {
+    background: var(--cor29);
+}
+
+.social::-webkit-scrollbar-thumb {
+    background-color: var(--cor31);
+    border-radius: 20px;
+    border: 5px solid var(--cor29);
+}
