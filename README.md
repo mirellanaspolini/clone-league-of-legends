@@ -1,8 +1,12 @@
 <h2 align="center">🚧  Projeto em construção...  🚧 </h2>
 
+<div align="center"> 
+    
 ![Badge](https://img.shields.io/badge/status-EM_DESENVOLVIMENTO-%237159c1?)
 ![Badge](https://img.shields.io/badge/licenca-MIT-ff69b4)
 ![Badge](https://img.shields.io/badge/colaboradores-2-%237159c1?)
+    
+</div>
 
 <h1 align="center">League of Legends Clone</h1>
 <p align="center">Um clone do nosso querido lolzinho</p>
@@ -11,12 +15,23 @@
 
 <h3 align="center">Projeto Final</h3>
 
+<div align="center">
+    <img width="800" src="https://imgur.com/DEGN4JC.png" alt="">
+    <div style="display:flex;">
+        <img width="400px" src="https://imgur.com/foQrvbk.png" alt="">
+        <img width="400px" src="https://imgur.com/lW1o1iW.png" alt="">
+    </div>
+</div>
+
 <h3 align="center">Riot Client</h3>
 
-![Imgur](https://imgur.com/Ozg6VKA.png)
-![Imgur](https://imgur.com/sN7fYMx.png)
-![Imgur](https://imgur.com/DMEVKA0.png)
-
+<div align="center">
+    <img width="800" src="https://imgur.com/Ozg6VKA.png" alt="">
+    <div style="display:flex;">
+        <img width="400px" src="https://imgur.com/sN7fYMx.png" alt="">
+        <img width="400px" src="https://imgur.com/DMEVKA0.png" alt="">
+    </div>
+</div>
 <hr>
 
 ## 🖱 Funcionalidades do jogo adotadas no projeto
