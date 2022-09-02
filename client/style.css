@@ -234,13 +234,13 @@
 
 /* social */
 .social {
+    position: relative;
     grid-area: social;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     max-width: 100%;
     height: 100%;
-    padding: 0 10px;
     background-color: var(--fundo-principal);
     font-size: 14px;
     font-family: "Roboto", sans-serif;
@@ -249,9 +249,21 @@
     overflow-y: scroll;
 }
 
+.social header {
+    padding-left: 10px;
+    font-family: "Beaufort for LOL";
+    font-weight: 700;
+    font-size: 13px;
+    color: #d1bd8f;
+}
+
+.social header img {
+    margin: 2px;
+}
+
 .btn {
     width: 100%;
-    padding: 5px 0;
+    padding: 5px 10px;
     border: none;
     font-family: "Beaufort for LOL";
     font-weight: 700;
@@ -269,7 +281,7 @@
     display: flex;
     align-items: center;
     gap: 8px;
-    padding: 7px 2px;
+    padding: 5px 12px;
 }
 
 .social-box p {
@@ -285,6 +297,15 @@
     height: 100%;
     border-radius: 50%;
     border: 3px solid #976f3d;
+}
+
+.social footer > * {
+    width: 100%;
+    margin: 2px;
+    padding: 0.3rem 0.46rem;
+    border: 1px solid #aa814a;
+    background-color: #1e2328;
+    font-family: "Beaufort for LOL";
 }
 
 /* social - status */
