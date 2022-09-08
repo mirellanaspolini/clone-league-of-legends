@@ -47,7 +47,7 @@ img {
 
 #carrossel span {
     font-size: 12px;
-    color: var(--cor21);
+    color: #d2c195;
 }
 
 .carousel-indicators [data-bs-target] {
@@ -78,7 +78,13 @@ img {
     text-align: left;
     bottom: 0;
     background-color: #08153f;
-    background: linear-gradient(transparent 0%,#98a2b500 18.75%,#09214f82 43.2%,#09214fcc 73.58%,#09214f 100%);
+    background: linear-gradient(
+        transparent 0%,
+        #98a2b500 18.75%,
+        #09214f82 43.2%,
+        #09214fcc 73.58%,
+        #09214f 100%
+    );
     background: linear-gradient(transparent, #010a1b);
     background-blend-mode: overlay;
 }

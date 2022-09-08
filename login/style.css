@@ -1,5 +1,4 @@
 @import "../global.css";
-@import "../variaveis.css";
 
 /* MAIN */
 main {
@@ -295,7 +294,7 @@ main {
     justify-content: center;
     width: 360px;
     height: 576px;
-    background-color: #ffffff;
+    background-color: #fff;
     z-index: 4;
 }
 

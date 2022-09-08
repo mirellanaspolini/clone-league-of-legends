@@ -1,5 +1,4 @@
 @import "../global.css";
-@import "../variaveis.css";
 
 /* IMPORTANDO FONTES EXTERNAS */
 @font-face {
@@ -15,7 +14,7 @@
 }
 
 .main {
-    background-color: var(--fundo-principal);
+    background-color: #010a13;
     font-family: "Beaufort for LOL";
     font-weight: 700;
     font-size: 30px;
@@ -34,7 +33,7 @@
 .geral {
     width: 100%;
     height: 100%;
-    background-color: var(--fundo-principal);
+    background-color: #010a13;
     grid-area: geral;
     overflow: hidden;
 }
@@ -45,7 +44,7 @@
     padding: 0 1rem;
     border-bottom: 1px solid #343d44;
     border-top: 3px solid #6f5d39;
-    background-color: var(--fundo-principal);
+    background-color: #010a13;
 }
 
 .header-client a,
@@ -234,18 +233,17 @@
 
 /* social */
 .social {
-    position: relative;
     grid-area: social;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     max-width: 100%;
     height: 100%;
-    background-color: var(--fundo-principal);
+    background-color: #010a13;
     font-size: 14px;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
-    color: var(--cor25);
+    color: #4b5258;
     overflow-y: scroll;
 }
 
@@ -269,12 +267,12 @@
     font-weight: 700;
     font-size: 12px;
     text-align: left;
-    color: var(--cor22);
+    color: #929994;
 }
 
 .btn:hover,
 .btn:focus {
-    color: var(--cor22);
+    color: #929994;
 }
 
 .social-box {
@@ -339,7 +337,7 @@
 }
 
 .azul {
-    color: var(--cor30);
+    color: #0ab4b0;
 }
 
 .azul::before {
@@ -455,11 +453,11 @@
 }
 
 .social::-webkit-scrollbar-track {
-    background: var(--cor29);
+    background: #ffffff00;
 }
 
 .social::-webkit-scrollbar-thumb {
-    background-color: var(--cor31);
+    background-color: #1d2327;
     border-radius: 20px;
-    border: 5px solid var(--cor29);
+    border: 5px solid #ffffff00;
 }

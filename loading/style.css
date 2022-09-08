@@ -1,5 +1,4 @@
 @import "../global.css";
-@import "../variaveis.css";
 
 .img {
     margin-left: calc(50% - 200px);
@@ -9,22 +8,16 @@
 }
 
 .main {
-    /* display: flex;
-    width: 1024px;
-    min-height: 576px;
-    margin: auto; */
-    background-color: var(--fundo-principal);
+    background-color: #010a13;
     visibility: hidden;
-    /* width: 1280px;
-    height: 720px; */
 }
 
 .client > div.loader:after {
     flex: 1;
-    background-color: var(--fundo-principal);
+    background-color: #010a13;
 }
 
-/* scoial */
+/* social */
 .social {
     display: flex;
     min-height: 100%;
@@ -43,7 +36,6 @@ header {
 /* loader */
 .loader {
     margin: auto;
-    /* text-indent: -9999rem; */
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 50%;
@@ -90,5 +82,3 @@ header {
         transform: rotate(360deg);
     }
 }
-
-/* loader */
