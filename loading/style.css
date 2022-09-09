@@ -31,6 +31,8 @@ header {
     width: 1024px;
     height: 68px;
     background-color: #02111b;
+    border-bottom: 1px solid #343d44;
+    border-top: 3px solid #6f5d39;
 }
 
 /* loader */

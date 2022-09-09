@@ -93,7 +93,7 @@
 
 .ativo::before {
     content: " ";
-    background-image: url(/client/img/decorador.svg);
+    background-image: url(/client/img/header/decorador.svg);
     position: absolute;
     height: 13px;
     width: 25px;
@@ -185,18 +185,22 @@
     border-radius: 170%;
 }
 
-.desenvolvido {
+.carrossel-inicio {
     position: absolute;
-    top: 20%;
-    right: 5%;
-    width: 380px;
+    top: 100px;
+    left: 45%;
+}
+
+.desenvolvido {
+    width: 390px;
     padding: 2rem;
     border-radius: 40px;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(177, 177, 177, 0.295);
     -webkit-backdrop-filter: blur(23px);
     backdrop-filter: blur(23px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     color: white;
+    text-shadow: 1px 2px 1px #00000049;
 }
 
 .info-devs {
@@ -209,7 +213,13 @@
 }
 
 .devs h3 {
-    font-size: 20px;
+    font-size: 19px;
+}
+
+.direitos {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.4;
 }
 
 .essencia-azul,
@@ -219,14 +229,14 @@
 }
 
 .essencia-azul::before {
-    content: url(./img/essencia-azul.png);
+    content: url(./img/header/essencia-azul.png);
     vertical-align: middle;
     margin-right: 10px;
     margin-left: 2px;
 }
 
 .rp::before {
-    content: url(./img/rp.png);
+    content: url(./img/header/rp.png);
     vertical-align: middle;
     margin-right: 8px;
 }
@@ -323,7 +333,7 @@
     width: 15px;
     height: 15px;
     background-size: cover;
-    background-image: url(./img/online.svg);
+    background-image: url(./img/social/status/online.svg);
 }
 
 .header-client .online::before {
@@ -348,7 +358,7 @@
     width: 15px;
     height: 15px;
     background-size: cover;
-    background-image: url(./img/em-partida.svg);
+    background-image: url(./img/social/status/em-partida.svg);
 }
 
 .offline::before {
@@ -359,7 +369,7 @@
     width: 15px;
     height: 15px;
     background-size: cover;
-    background-image: url(./img/offline.svg);
+    background-image: url(./img/social/status/offline.svg);
 }
 
 .lol-plus::before {
@@ -370,7 +380,7 @@
     width: 15px;
     height: 12px;
     background-size: cover;
-    background-image: url(./img/lol-plus.svg);
+    background-image: url(./img/social/status/lol-plus.svg);
 }
 
 .ausente::before {
@@ -381,7 +391,7 @@
     width: 15px;
     height: 15px;
     background-size: cover;
-    background-image: url(./img/ausente.svg);
+    background-image: url(./img/social/status/ausente.svg);
 }
 
 /* LOJA */
@@ -430,13 +440,13 @@
 }
 
 .preco-rp::before {
-    content: url("/client/img/rp-12.png");
+    content: url("/client/img/loja/rp-12.png");
     margin: 6px;
     vertical-align: middle;
 }
 
 .preco-ea::before {
-    content: url("/client/img/essencia-azul-12.png");
+    content: url("/client/img/loja/essencia-azul-12.png");
     vertical-align: middle;
     margin: 4px;
     height: 10px;

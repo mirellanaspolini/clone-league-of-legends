@@ -1,37 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
     <title>Loading...</title>
 </head>
 
-<body onload="loading()">
+<body>
     <div class="loading"></div>
 
     <main class="client main">
-        
         <header></header>
         <div class="loader"></div>
-        <div class="social">
-            <div class="loader"></div>
-        </div>
+        <div class="social"><div class="loader"></div></div>
     </main>
-
-    <script>
-        function loading() {
-            let loading_gif = document.querySelector(".loading");
-            loading_gif.innerHTML = `<img class="img" width="400" src="gif-loading.gif" alt="">`;
-            let x = document.querySelector(".img");
-            setTimeout(function () {
-                x.style.display = 'none';
-                document.querySelector(".client").style.visibility = "visible";
-            }, 2000);
-        }
-    </script>
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
 </body>
 
 </html>
