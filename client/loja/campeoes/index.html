@@ -41,27 +41,28 @@
 
             <hr>
 
-            <input type="search" name="" id="">
-            <fieldset><input class="input-checkbox" type="checkbox" id="habilitados">
+            <input type="search" id="input-search-champ">
+            <fieldset>
+                <input class="input-checkbox" type="checkbox" id="habilitados">
                 <label for="habilitados">Exibir habilitados</label>
             </fieldset>
 
             <hr>
 
-            <select name="" id="dasds">
-                <option value="">Data de lançamento</option>
-                <option value="">Data de lançamento</option>
-                <option value="">Preço(RP)</option>
-                <option value="">Preço(RP)</option>
-                <option value="">Preço(EA)</option>
-                <option value="">Preço(EA)</option>
-                <option value="">Alfabética</option>
-                <option value="">Alfabética</option>
+            <select id="select-sorting-method">
+                <option value="2">Data de lançamento ↓</option>
+                <option value="1">Data de lançamento ↑</option>
+                <option value="4">Preço(RP) ↓</option>
+                <option value="3">Preço(RP) ↑</option>
+                <option value="6">Preço(EA) ↓</option>
+                <option value="5">Preço(EA) ↑</option>
+                <option value="8">Alfabética ↓</option>
+                <option value="7">Alfabética ↑</option>
             </select>
 
             <fieldset>
-                <input class="input-checkbox" type="checkbox" id="slayer">
-                <label for="slayer">Assassino</label>
+                <input class="input-checkbox" type="checkbox" id="assassin">
+                <label for="assassin">Assassino</label>
             </fieldset>
             <fieldset>
                 <input class="input-checkbox" type="checkbox" id="bruiser">
@@ -84,11 +85,15 @@
                 <label for="tank">Tanque</label>
             </fieldset>
             <hr>
-            <fieldset><input class="input-checkbox" type="checkbox" id="sale">
+            <fieldset>
+                <input class="input-checkbox" type="checkbox" id="sale">
                 <label for="sale">Promoção</label>
             </fieldset>
         </aside>
-        <section class="grid-campeoes"></section>
+        <section id="grid-campeoes">
+
+        </section>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
