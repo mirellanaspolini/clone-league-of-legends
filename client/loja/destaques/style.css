@@ -25,14 +25,13 @@ img {
         ". . . . . "
         ". . . . . ";
     gap: 0.5rem;
-    background-image: url(/client/img/loja/Group\ 5.png);
+    background-image: url(../../../client/img/loja/Group\ 5.png);
     background-size: cover;
 }
 
 /* CARROSSEL */
 #carrossel {
     box-sizing: border-box;
-    /* width: 60vw; */
     height: 308px;
     margin: 0 auto;
     border: 1px solid #f5f5dc6c;

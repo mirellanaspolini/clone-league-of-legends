@@ -3,6 +3,13 @@ var conteudo_geral = document.querySelector(".geral");
 var botao_inicio = document.querySelector(".botao-inicio");
 var botao_loja = document.querySelector(".botao-loja");
 
+let card = document.querySelectorAll(".card");
+card.forEach((item) => {
+    if (item.dataset.promocao) {
+        item.innerHTML += `<img class="promocao-img" src="../../../client/img/loja/desconto.png" width="15" height="15">`;
+    }
+});
+
 function abrir_inicio() {
     header.innerHTML = `
     <nav>
@@ -50,8 +57,8 @@ function abrir_inicio() {
             </div>
         </div>
     </div>
-</div>
-<img src="https://live.staticflickr.com/65535/52280173860_fbdca2d4ee_h.jpg" width="800" height="510" alt="wallpaper">`;
+    </div>
+    <img src="https://live.staticflickr.com/65535/52280173860_fbdca2d4ee_h.jpg" width="800" height="510" alt="wallpaper">`;
 
     botao_inicio.classList.add("ativo");
     botao_loja.classList.remove("ativo");

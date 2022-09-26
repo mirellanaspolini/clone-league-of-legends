@@ -93,7 +93,7 @@
 
 .ativo::before {
     content: " ";
-    background-image: url(/client/img/header/decorador.svg);
+    background-image: url(../client/img/header/decorador.svg);
     position: absolute;
     height: 13px;
     width: 25px;
@@ -440,13 +440,13 @@
 }
 
 .preco-rp::before {
-    content: url("/client/img/loja/rp-12.png");
+    content: url("./img/loja/rp-12.png");
     margin: 6px;
     vertical-align: middle;
 }
 
 .preco-ea::before {
-    content: url("/client/img/loja/essencia-azul-12.png");
+    content: url("./img/loja/essencia-azul-12.png");
     vertical-align: middle;
     margin: 4px;
     height: 10px;
@@ -470,4 +470,59 @@
     background-color: #1d2327;
     border-radius: 20px;
     border: 5px solid #ffffff00;
+}
+
+/* selo de promoção */
+.promocao-img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.promocao-25:before,
+.promocao-30:before,
+.promocao-40:before,
+.promocao-45:before,
+.promocao-50:before,
+.promocao-55:before,
+.promocao-60:before {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    color: #f0f0f0;
+    z-index: 5;
+    font-weight: 400;
+    font-family: initial;
+    font-size: 13px;
+}
+
+.promocao-25:before {
+    content: "-25%";
+}
+
+.promocao-30:before {
+    content: "-30%";
+}
+
+.promocao-40:before {
+    content: "-40%";
+}
+
+.promocao-45:before {
+    content: "-45%";
+}
+
+.promocao-50:before {
+    content: "-50%";
+}
+
+.promocao-55:before {
+    content: "-55%";
+}
+
+.promocao-60:before {
+    content: "-60%";
 }
