@@ -14,10 +14,10 @@ function abrir_inicio() {
     header.innerHTML = `
     <nav>
         <ul class="d-flex gap-4 text-uppercase">
-            <li>visão geral</li>
-            <li>outro céu</li>
-            <li>cblol esports</li>
-            <li>notas de atualização</li>
+            <li class="links-desabilitados">visão geral</li>
+            <li style="cursor: pointer;">outro céu</li>
+            <li class="links-desabilitados">cblol esports</li>
+            <li class="links-desabilitados">notas de atualização</li>
         </ul>
         </nav>`;
     header.classList.add("header-inicio");
@@ -68,18 +68,18 @@ function abrir_loja() {
     header.innerHTML = `
     <nav>
         <ul class="d-flex gap-4 text-uppercase">
-            <li>destaques</li>
-            <li onclick="abrir_loja_campeoes()">campeões</li>
-            <li>skins</li>
-            <li>tft</li>
-            <li>espólios</li>
-            <li>acessórios</li>
+            <li style="cursor: pointer;">destaques</li>
+            <li style="cursor: pointer;" onclick="abrir_loja_campeoes()">campeões</li>
+            <li class="links-desabilitados">skins</li>
+            <li class="links-desabilitados">tft</li>
+            <li class="links-desabilitados">espólios</li>
+            <li class="links-desabilitados">acessórios</li>
         </ul>
     </nav>
     <div class="d-flex gap-3 header-destaques-botoes">
-        <button>COMPRE RP</button>
-        <button><img src="./img/loja/presentes-icone.svg" alt=""></button>
-        <button><img src="./img/loja/configuracoes-icone.svg" alt=""></button>
+        <button class="links-desabilitados">COMPRE RP</button>
+        <button class="links-desabilitados"><img src="./img/loja/presentes-icone.svg" alt=""></button>
+        <button class="links-desabilitados"><img src="./img/loja/configuracoes-icone.svg" alt=""></button>
     </div>`;
     header.classList.add("header-destaques");
     header.classList.remove("header-inicio");
@@ -96,18 +96,18 @@ function abrir_loja_campeoes() {
     header.innerHTML = `
     <nav>
         <ul class="d-flex gap-4 text-uppercase">
-            <li onclick="abrir_loja()">destaques</li>
-            <li>campeões</li>
-            <li>skins</li>
-            <li>tft</li>
-            <li>espólios</li>
-            <li>acessórios</li>
+            <li style="cursor: pointer;" onclick="abrir_loja()">destaques</li>
+            <li style="cursor: pointer;">campeões</li>
+            <li class="links-desabilitados">skins</li>
+            <li class="links-desabilitados">tft</li>
+            <li class="links-desabilitados">espólios</li>
+            <li class="links-desabilitados">acessórios</li>
         </ul>
     </nav>
     <div class="d-flex gap-3 header-destaques-botoes">
-        <button>COMPRE RP</button>
-        <button><img src="./img/loja/presentes-icone.svg" alt=""></button>
-        <button><img src="./img/loja/configuracoes-icone.svg" alt=""></button>
+        <button class="links-desabilitados">COMPRE RP</button>
+        <button class="links-desabilitados"><img src="./img/loja/presentes-icone.svg" alt=""></button>
+        <button class="links-desabilitados"><img src="./img/loja/configuracoes-icone.svg" alt=""></button>
     </div>`;
     header.classList.add("header-campeoes");
     header.classList.remove("header-destaques");

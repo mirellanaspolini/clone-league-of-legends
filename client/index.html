@@ -25,23 +25,23 @@
 <body onselectstart="return false">
     <main class="main client">
         <header class="header-client d-flex justify-content-between">
-            <div style="color: #D2C195;" class="d-flex align-items-center"><img height="40" src="./img/header/btn-jogar.jpg" alt="">
-                <img width="26" src="./img/header/avisos.svg" alt="">
+            <div style="color: #D2C195;" class="d-flex align-items-center"><img class="links-desabilitados" height="40" src="./img/header/btn-jogar.jpg" alt="">
+                <img class="links-desabilitados" width="26" src="./img/header/avisos.svg" alt="">
                 <button class="botao-inicio ativo" onclick="abrir_inicio()">
                     <h6 class="text-uppercase">início</h6>
                 </button>
-                <button>
+                <button class="links-desabilitados">
                     <h6 class="text-uppercase">tft</h6>
                 </button>
-                <button>
+                <button class="links-desabilitados">
                     <h6 class="text-uppercase">clash</h6>
                 </button>
             </div>
 
             <div class="d-flex align-items-center icones">
-                <button><img width="25" src="./img/header/perfil-icone.svg" alt=""></button>
-                <button><img width="25" src="./img/header/mochila-icone.svg" alt=""></button>
-                <button><img width="27" src="./img/header/espolios-icone.svg" alt=""></button>
+                <button class="links-desabilitados"><img width="25" src="./img/header/perfil-icone.svg" alt=""></button>
+                <button class="links-desabilitados"><img width="25" src="./img/header/mochila-icone.svg" alt=""></button>
+                <button class="links-desabilitados"><img width="27" src="./img/header/espolios-icone.svg" alt=""></button>
                 <button class="botao-loja" onclick="abrir_loja()"><img width="27" src="./img/header/loja-icone.svg" alt=""></button>
 
                 <span class="decorador"></span>
@@ -60,10 +60,10 @@
         <div class="d-flex header header-inicio">
             <nav>
                 <ul class="d-flex gap-4 text-uppercase">
-                    <li>visão geral</li>
-                    <li>outro céu</li>
-                    <li>cblol esports</li>
-                    <li>notas de atualização</li>
+                    <li class="links-desabilitados">visão geral</li>
+                    <li style="cursor: pointer;">outro céu</li>
+                    <li class="links-desabilitados">cblol esports</li>
+                    <li class="links-desabilitados">notas de atualização</li>
                 </ul>
             </nav>
         </div>
@@ -108,282 +108,285 @@
             <header class="w-100 text-uppercase d-flex justify-content-between align-items-center">
                 <p>social</p>
 
-                <div style="justify-self: end;">
+                <div>
                     <img src="./img/social/adicionar-icone.svg" alt="">
                     <img src="./img/social/nova-pasta-icone.svg" alt="">
                     <img src="./img/social/filtro-icone.svg" alt="">
                     <img src="./img/social/pesquisar-icone.svg" alt="">
                 </div>
             </header>
-            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#peek-a-boo">PEEK A BOO (4/12)</button>
-            <div class="collapse multi-collapse" id="peek-a-boo">
-                <ul>
-                    <li class="social-box">
-                        <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52265757975_a6a9a4499b_s.jpg" alt="">
-                        <div>
-                            <p style="color: #929994;">MXVIII</p>
-                            <p class="status azul">Em partida</p>
-                        </div>
-                    </li>
 
-                    <li class="social-box">
-                        <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52264308992_f7289ee4b1_s.jpg" alt="">
-                        <div>
-                            <p style="color: #929994;">DESTROYED KING</p>
-                            <p class="status lol-plus">LoL+</p>
-                        </div>
-                    </li>
+            <div class="wrapper-pastas">
+                <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#peek-a-boo">PEEK A BOO (4/12)</button>
+                <div class="collapse multi-collapse" id="peek-a-boo">
+                    <ul>
+                        <li class="social-box">
+                            <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52265757975_a6a9a4499b_s.jpg" alt="">
+                            <div>
+                                <p style="color: #929994;">MXVIII</p>
+                                <p class="status azul">Em partida</p>
+                            </div>
+                        </li>
 
-                    <li class="social-box">
-                        <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52265276131_dcb2572d58_s.jpg" alt="">
-                        <div>
-                            <p style="color: #929994;">Dog God Street</p>
-                            <p class="status lol-plus">LoL+</p>
-                        </div>
-                    </li>
+                        <li class="social-box">
+                            <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52264308992_f7289ee4b1_s.jpg" alt="">
+                            <div>
+                                <p style="color: #929994;">DESTROYED KING</p>
+                                <p class="status lol-plus">LoL+</p>
+                            </div>
+                        </li>
 
-                    <li class="social-box">
-                        <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52265276106_3f395d5380_s.jpg" alt="">
-                        <div>
-                            <p style="color: #929994;">Vinimaia</p>
-                            <p class="status lol-plus">LoL+</p>
-                        </div>
-                    </li>
+                        <li class="social-box">
+                            <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52265276131_dcb2572d58_s.jpg" alt="">
+                            <div>
+                                <p style="color: #929994;">Dog God Street</p>
+                                <p class="status lol-plus">LoL+</p>
+                            </div>
+                        </li>
 
-                    <li class="social-box">
-                        <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52264309182_97f06b9b7f_s.jpg" alt="">
-                        <div>
-                            <p>CLOW</p>
-                            <p class="status offline">Offline</p>
-                        </div>
-                    </li>
+                        <li class="social-box">
+                            <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52265276106_3f395d5380_s.jpg" alt="">
+                            <div>
+                                <p style="color: #929994;">Vinimaia</p>
+                                <p class="status lol-plus">LoL+</p>
+                            </div>
+                        </li>
 
-                    <li class="social-box">
-                        <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52265757760_0766bc7647_s.jpg" alt="">
-                        <div>
-                            <p>DanteSPD</p>
-                            <p class="status offline">Offline</p>
-                        </div>
-                    </li>
+                        <li class="social-box">
+                            <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52264309182_97f06b9b7f_s.jpg" alt="">
+                            <div>
+                                <p>CLOW</p>
+                                <p class="status offline">Offline</p>
+                            </div>
+                        </li>
 
-                    <li class="social-box">
-                        <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52265757880_6cbb45aa5d_s.jpg" alt="">
-                        <div>
-                            <p>ElectraHeartz</p>
-                            <p class="status offline">Offline</p>
-                        </div>
-                    </li>
+                        <li class="social-box">
+                            <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52265757760_0766bc7647_s.jpg" alt="">
+                            <div>
+                                <p>DanteSPD</p>
+                                <p class="status offline">Offline</p>
+                            </div>
+                        </li>
 
-                    <li class="social-box">
-                        <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52265542829_e5c5371a0d_s.jpg" alt="">
-                        <div>
-                            <p>InLubellion</p>
-                            <p class="status offline">Offline</p>
-                        </div>
-                    </li>
+                        <li class="social-box">
+                            <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52265757880_6cbb45aa5d_s.jpg" alt="">
+                            <div>
+                                <p>ElectraHeartz</p>
+                                <p class="status offline">Offline</p>
+                            </div>
+                        </li>
 
-                    <li class="social-box">
-                        <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52265276301_11f73561b4_s.jpg" alt="">
-                        <div>
-                            <p>Mr XxXx</p>
-                            <p class="status offline">Offline</p>
-                        </div>
-                    </li>
+                        <li class="social-box">
+                            <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52265542829_e5c5371a0d_s.jpg" alt="">
+                            <div>
+                                <p>InLubellion</p>
+                                <p class="status offline">Offline</p>
+                            </div>
+                        </li>
 
-                    <li class="social-box">
-                        <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52264309287_5bea65503e_s.jpg" alt="">
-                        <div>
-                            <p>O IVO</p>
-                            <p class="status offline">Offline</p>
-                        </div>
-                    </li>
+                        <li class="social-box">
+                            <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52265276301_11f73561b4_s.jpg" alt="">
+                            <div>
+                                <p>Mr XxXx</p>
+                                <p class="status offline">Offline</p>
+                            </div>
+                        </li>
 
-                    <li class="social-box">
-                        <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52265757965_4a344ac797_s.jpg" alt="">
-                        <div>
-                            <p>xVanilla</p>
-                            <p class="status offline">Offline</p>
-                        </div>
-                    </li>
-                </ul>
+                        <li class="social-box">
+                            <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52264309287_5bea65503e_s.jpg" alt="">
+                            <div>
+                                <p>O IVO</p>
+                                <p class="status offline">Offline</p>
+                            </div>
+                        </li>
+
+                        <li class="social-box">
+                            <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52265757965_4a344ac797_s.jpg" alt="">
+                            <div>
+                                <p>xVanilla</p>
+                                <p class="status offline">Offline</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#amigos-queridos">😎🌹🌹 (4/9)</button>
+                <div class="collapse multi-collapse" id="amigos-queridos">
+                    <ul>
+                        <li class="social-box">
+                            <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52265276156_626e9461d0_s.jpg" alt="">
+                            <div>
+                                <p style="color: #929994;">Dr Gangplank</p>
+                                <p class="status online">Online</p>
+                            </div>
+                        </li>
+
+                        <li class="social-box">
+                            <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52266185089_1fe4ab4a2e_s.jpg" alt="">
+                            <div>
+                                <p style="color: #929994;">Zilean Djamba</p>
+                                <p class="status azul">Seleção de Campeões</p>
+                            </div>
+                        </li>
+
+                        <li class="social-box">
+                            <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52265757865_31b168ae39_s.jpg" alt="">
+                            <div>
+                                <p style="color: #929994;">GÍVË in</p>
+                                <p class="status lol-plus">LoL+</p>
+                            </div>
+                        </li>
+
+                        <li class="social-box">
+                            <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52265757935_ae69e852d5_s.jpg" alt="">
+                            <div>
+                                <p style="color: #929994;">Tiwa</p>
+                                <p class="status lol-plus">LoL+</p>
+                            </div>
+                        </li>
+
+                        <li class="social-box">
+                            <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52265292318_b1720c890c_s.jpg" alt="">
+                            <div>
+                                <p>CSS HTML JS</p>
+                                <p class="status offline">Offline</p>
+                            </div>
+                        </li>
+
+                        <li class="social-box">
+                            <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52265795675_7e0f7766cc_s.jpg" alt="">
+                            <div>
+                                <p>H O L Y C K</p>
+                                <p class="status offline">Offline</p>
+                            </div>
+                        </li>
+
+                        <li class="social-box">
+                            <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52265758050_694bf7be8c_s.jpg" alt="">
+                            <div>
+                                <p>Hudax</p>
+                                <p class="status offline">Offline</p>
+                            </div>
+                        </li>
+
+                        <li class="social-box">
+                            <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52265333353_6069133217_s.jpg" alt="">
+                            <div>
+                                <p>LockharTiifa</p>
+                                <p class="status offline">Offline</p>
+                            </div>
+                        </li>
+
+                        <li class="social-box">
+                            <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52265292368_2f761662cf_n.jpg" alt="">
+                            <div>
+                                <p>Uni Pastelly</p>
+                                <p class="status offline">Offline</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#geral">GERAL (3/11)</button>
+                <div class="collapse multi-collapse" id="geral">
+                    <ul>
+                        <li class="social-box">
+                            <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52265276101_2cc165d4aa_s.jpg" alt="">
+                            <div>
+                                <p style="color: #929994;">Heimkidall</p>
+                                <p class="status lol-plus">LoL+</p>
+                            </div>
+                        </li>
+
+                        <li class="social-box">
+                            <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52265292398_813b592056_s.jpg" alt="">
+                            <div>
+                                <p style="color: #929994;">whas</p>
+                                <p class="status lol-plus">LoL+</p>
+                            </div>
+                        </li>
+
+                        <li class="social-box">
+                            <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52264309317_57ce17d4bf_s.jpg" alt="">
+                            <div>
+                                <p style="color: #929994;">Vulgo Dae Jung</p>
+                                <p class="status ausente">Criando partida de TFT</p>
+                            </div>
+                        </li>
+
+                        <li class="social-box">
+                            <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52265542894_9e54d11b1b_s.jpg" alt="">
+                            <div>
+                                <p>Doblax</p>
+                                <p class="status offline">Offline</p>
+                            </div>
+                        </li>
+
+                        <li class="social-box">
+                            <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52265314096_cf1382f873_s.jpg" alt="">
+                            <div>
+                                <p>Fifi Frank</p>
+                                <p class="status offline">Offline</p>
+                            </div>
+                        </li>
+
+                        <li class="social-box">
+                            <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52265918596_7fbb197e3e_s.jpg" alt="">
+                            <div>
+                                <p>Insoniamc</p>
+                                <p class="status offline">Offline</p>
+                            </div>
+                        </li>
+
+                        <li class="social-box">
+                            <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52265758040_94411664e0_s.jpg" alt="">
+                            <div>
+                                <p>Joinvillense</p>
+                                <p class="status offline">Offline</p>
+                            </div>
+                        </li>
+
+                        <li class="social-box">
+                            <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52265542769_f7b3ac88e7_s.jpg" alt="">
+                            <div>
+                                <p>Proffãno</p>
+                                <p class="status offline">Offline</p>
+                            </div>
+                        </li>
+
+                        <li class="social-box">
+                            <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52265292418_692abde586_s.jpg" alt="">
+                            <div>
+                                <p>robocoppe</p>
+                                <p class="status offline">Offline</p>
+                            </div>
+                        </li>
+
+                        <li class="social-box">
+                            <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52265757790_a13d79266d_s.jpg" alt="">
+                            <div>
+                                <p>Sch0lar</p>
+                                <p class="status offline">Offline</p>
+                            </div>
+                        </li>
+
+                        <li class="social-box">
+                            <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52264346432_6841aa14c3_s.jpg" alt="">
+                            <div>
+                                <p>ur dead to me</p>
+                                <p class="status offline">Offline</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
-            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#amigos-queridos">😎🌹🌹 (4/9)</button>
-            <div class="collapse multi-collapse" id="amigos-queridos">
-                <ul>
-                    <li class="social-box">
-                        <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52265276156_626e9461d0_s.jpg" alt="">
-                        <div>
-                            <p style="color: #929994;">Dr Gangplank</p>
-                            <p class="status online">Online</p>
-                        </div>
-                    </li>
-
-                    <li class="social-box">
-                        <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52266185089_1fe4ab4a2e_s.jpg" alt="">
-                        <div>
-                            <p style="color: #929994;">Zilean Djamba</p>
-                            <p class="status azul">Seleção de Campeões</p>
-                        </div>
-                    </li>
-
-                    <li class="social-box">
-                        <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52265757865_31b168ae39_s.jpg" alt="">
-                        <div>
-                            <p style="color: #929994;">GÍVË in</p>
-                            <p class="status lol-plus">LoL+</p>
-                        </div>
-                    </li>
-
-                    <li class="social-box">
-                        <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52265757935_ae69e852d5_s.jpg" alt="">
-                        <div>
-                            <p style="color: #929994;">Tiwa</p>
-                            <p class="status lol-plus">LoL+</p>
-                        </div>
-                    </li>
-
-                    <li class="social-box">
-                        <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52265292318_b1720c890c_s.jpg" alt="">
-                        <div>
-                            <p>CSS HTML JS</p>
-                            <p class="status offline">Offline</p>
-                        </div>
-                    </li>
-
-                    <li class="social-box">
-                        <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52265795675_7e0f7766cc_s.jpg" alt="">
-                        <div>
-                            <p>H O L Y C K</p>
-                            <p class="status offline">Offline</p>
-                        </div>
-                    </li>
-
-                    <li class="social-box">
-                        <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52265758050_694bf7be8c_s.jpg" alt="">
-                        <div>
-                            <p>Hudax</p>
-                            <p class="status offline">Offline</p>
-                        </div>
-                    </li>
-
-                    <li class="social-box">
-                        <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52265333353_6069133217_s.jpg" alt="">
-                        <div>
-                            <p>LockharTiifa</p>
-                            <p class="status offline">Offline</p>
-                        </div>
-                    </li>
-
-                    <li class="social-box">
-                        <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52265292368_2f761662cf_n.jpg" alt="">
-                        <div>
-                            <p>Uni Pastelly</p>
-                            <p class="status offline">Offline</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-
-            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#geral">GERAL (3/11)</button>
-            <div class="collapse multi-collapse" id="geral">
-                <ul>
-                    <li class="social-box">
-                        <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52265276101_2cc165d4aa_s.jpg" alt="">
-                        <div>
-                            <p style="color: #929994;">Heimkidall</p>
-                            <p class="status lol-plus">LoL+</p>
-                        </div>
-                    </li>
-
-                    <li class="social-box">
-                        <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52265292398_813b592056_s.jpg" alt="">
-                        <div>
-                            <p style="color: #929994;">whas</p>
-                            <p class="status lol-plus">LoL+</p>
-                        </div>
-                    </li>
-
-                    <li class="social-box">
-                        <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52264309317_57ce17d4bf_s.jpg" alt="">
-                        <div>
-                            <p style="color: #929994;">Vulgo Dae Jung</p>
-                            <p class="status ausente">Criando partida de TFT</p>
-                        </div>
-                    </li>
-
-                    <li class="social-box">
-                        <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52265542894_9e54d11b1b_s.jpg" alt="">
-                        <div>
-                            <p>Doblax</p>
-                            <p class="status offline">Offline</p>
-                        </div>
-                    </li>
-
-                    <li class="social-box">
-                        <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52265314096_cf1382f873_s.jpg" alt="">
-                        <div>
-                            <p>Fifi Frank</p>
-                            <p class="status offline">Offline</p>
-                        </div>
-                    </li>
-
-                    <li class="social-box">
-                        <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52265918596_7fbb197e3e_s.jpg" alt="">
-                        <div>
-                            <p>Insoniamc</p>
-                            <p class="status offline">Offline</p>
-                        </div>
-                    </li>
-
-                    <li class="social-box">
-                        <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52265758040_94411664e0_s.jpg" alt="">
-                        <div>
-                            <p>Joinvillense</p>
-                            <p class="status offline">Offline</p>
-                        </div>
-                    </li>
-
-                    <li class="social-box">
-                        <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52265542769_f7b3ac88e7_s.jpg" alt="">
-                        <div>
-                            <p>Proffãno</p>
-                            <p class="status offline">Offline</p>
-                        </div>
-                    </li>
-
-                    <li class="social-box">
-                        <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52265292418_692abde586_s.jpg" alt="">
-                        <div>
-                            <p>robocoppe</p>
-                            <p class="status offline">Offline</p>
-                        </div>
-                    </li>
-
-                    <li class="social-box">
-                        <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52265757790_a13d79266d_s.jpg" alt="">
-                        <div>
-                            <p>Sch0lar</p>
-                            <p class="status offline">Offline</p>
-                        </div>
-                    </li>
-
-                    <li class="social-box">
-                        <img width="36" class="social-img" src="https://live.staticflickr.com/65535/52264346432_6841aa14c3_s.jpg" alt="">
-                        <div>
-                            <p>ur dead to me</p>
-                            <p class="status offline">Offline</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-
-            <footer style="left: 2px;" class="d-flex justify-content-between">
-                <img src="./img/social/chat-icone.svg" alt="">
-                <img src="./img/social/missoes-icone.svg" alt="">
-                <img src="./img/social/mic-icone.svg" alt="">
+            <footer class=" d-flex justify-content-between">
+                <img class="links-desabilitados" src="./img/social/chat-icone.svg" alt="">
+                <img class="links-desabilitados" src="./img/social/missoes-icone.svg" alt="">
+                <img class="links-desabilitados" src="./img/social/mic-icone.svg" alt="">
                 <div class="text-uppercase">v12.14</div>
-                <img src="./img/social/bug-icone.svg" alt="">
+                <img class="links-desabilitados" src="./img/social/bug-icone.svg" alt="">
             </footer>
         </div>
 

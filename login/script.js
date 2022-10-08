@@ -20,7 +20,7 @@ function login() {
 
     if (senha === senha_cadastrada && user === user_cadastrado) {
         setTimeout(() => {
-            location.href = "http://127.0.0.1:5500/loading/loading.html";
+            location.href = "/loading/";
         }, 1500);
     } else {
         let span_user = document.querySelectorAll(".login-span")[0];
