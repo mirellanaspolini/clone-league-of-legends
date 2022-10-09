@@ -20,7 +20,7 @@ function login() {
 
     if (senha === senha_cadastrada && user === user_cadastrado) {
         setTimeout(() => {
-            location.href = "/loading/";
+            location.href = "/clone-league-of-legends/loading/";
         }, 1500);
     } else {
         let span_user = document.querySelectorAll(".login-span")[0];
