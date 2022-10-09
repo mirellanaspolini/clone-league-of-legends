@@ -6,6 +6,6 @@ setTimeout(() => {
     x.style.display = "none";
     document.querySelector(".client").style.visibility = "visible";
     setTimeout(() => {
-        location.href = "/client/";
+        location.href = "/clone-league-of-legends/client/";
     }, 2000);
 }, 2000);
