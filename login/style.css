@@ -11,8 +11,6 @@ main {
 
 /* LOGIN */
 #login {
-    flex-direction: column;
-    justify-content: space-between;
     width: 100%;
     max-width: 360px;
     padding: 40px;
@@ -47,7 +45,7 @@ main {
     min-width: 270px;
 }
 
-.login-input_box span {
+.login-input_box label {
     position: absolute;
     left: 12px;
     top: 15px;
@@ -55,19 +53,23 @@ main {
     font-weight: 700;
     color: #919191;
     transition: 0.2s;
+    cursor: auto;
 }
 
-.login-input_box input:focus ~ span,
-.login-input_box input:valid ~ span {
+.login-input_box input:focus ~ label,
+.login-input_box input:valid ~ label {
     transform: translateY(-10px) translateX(-4px);
 }
 
 .login-buttons button {
     width: 31%;
-    margin-bottom: 10px;
     border: none;
     border-radius: 3px;
     outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .35rem;
 }
 
 .login-buttons button:first-child {
@@ -75,7 +77,6 @@ main {
 }
 
 .login-buttons button:nth-child(2) {
-    height: 26px;
     border: 2px solid #f2f2f2;
     background-color: #fff;
 }
@@ -114,10 +115,14 @@ main {
     height: 60px;
     margin: 0 auto;
     margin-bottom: 50px;
-    background-color: #fff;
     border-radius: 30%;
     border-color: #ededed;
     border-style: solid;
+    background-color: #fff;
+}
+
+.ativo {
+    background-color: #c73033;
 }
 
 #wallpaper {
@@ -133,17 +138,15 @@ main {
 /* Tooltip de avisos */
 .avisos {
     display: inline-block;
-    position: relative;
-    top: 1rem;
-    left: 1rem !important;
+    margin: 1rem;
     border: none;
     background-color: transparent;
 }
 
 .avisos-texto {
     position: absolute;
-    top: -5px;
-    left: 105%;
+    top: 10px;
+    left: calc(4rem);
     width: 330px;
     padding: 2rem;
     text-align: start;
@@ -151,9 +154,6 @@ main {
     line-height: normal;
     border-radius: 4px;
     background-color: #fff;
-    /* color: #000; */
-    /* font-size: 12px; */
-    /* z-index: 1; */
     visibility: hidden;
 }
 
@@ -192,7 +192,8 @@ main {
     z-index: 5;
 }
 
-.avisos:hover .avisos-texto {
+.avisos:focus ~ .avisos-texto,
+.avisos:hover ~ .avisos-texto {
     visibility: visible;
     opacity: 1;
 }
@@ -257,16 +258,13 @@ main {
     position: absolute;
     top: 85px;
     left: 40px;
-
     width: 280px;
     padding: 1rem;
-
     text-align: center;
     font-weight: 600;
     font-size: 14px;
     font-size: 11px;
     color: #b513c4;
-
     border-radius: 2px;
     background-color: #fff;
     box-shadow: 3px 4.5px 19px 3px #ddd;

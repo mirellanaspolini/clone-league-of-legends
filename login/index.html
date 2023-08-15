@@ -24,25 +24,25 @@
 
 <body>
     <main class="">
-        <section id="login" class="d-flex">
+        <section id="login" class="d-flex flex-column justify-content-between">
             <div>
                 <img class="login-logo" src="./img/riot-logo.png" alt="Riot Games logo">
-                <form class="login-form">
+                <form id="login-form">
                     <h4 class="text-center login-header">Fazer login</h4>
                     <div class="login-input_box">
-                        <input class="login-input" type="text" required>
-                        <span class="text-uppercase login-span">nome de usuário</span>
+                        <input id="txtUsuario" class="login-input" type="text" required>
+                        <label for="txtUsuario" class="text-uppercase lblUsuario">nome de usuário</label>
                     </div>
 
                     <div class="login-input_box">
-                        <input class="login-input" type="password" required>
-                        <span class="text-uppercase login-span">senha</span>
+                        <input id="txtSenha" class="login-input" type="password" required>
+                        <label for="txtSenha" class="text-uppercase lblSenha">senha</label>
                     </div>
 
-                    <div class="d-flex justify-content-between login-buttons">
-                        <button><i class="fab fa fa-facebook fa-inverse" aria-hidden="true"></i></button>
-                        <button><img height="14" src="./img/google-icon.png" alt=""></button>
-                        <button><i class="fab fa fa-apple fa-inverse" aria-hidden="true"></i></button>
+                    <div class="d-flex justify-content-between mb-2 login-buttons">
+                        <button><i class="fab fa fa-facebook fa-inverse" aria-hidden="true"></i><span class="sr-only">Fazer login com o Facebook</span></button>
+                        <button><img height="14" src="./img/google-icon.png" alt="" aria-hidden="true"><span class="sr-only">Fazer login com o Google</span></button>
+                        <button><i class="fab fa fa-apple fa-inverse" aria-hidden="true"></i><span class="sr-only">Fazer login com a Apple</span></button>
                     </div>
 
                     <fieldset class="d-flex align-items-center">
@@ -52,7 +52,7 @@
             </div>
 
             <div>
-                <button class="login-button" onclick="login();return false"><img height="26" src="./img/seta.svg" alt=""></button>
+                <button type="submit" class="login-button" disabled="true" onclick="login();return false"><img height="26" src="./img/seta.svg" alt=""></button>
 
                 <div style="text-align: center;">
                     <a class="text-uppercase login-links" href="#">não consegue iniciar sessão?</a>
@@ -65,9 +65,11 @@
 
         <section id="wallpaper">
             <header class="position-relative">
-                <button class="avisos position-absolute start-0">
-                    <img width="42" height="42" src="./img/icons8-ponto-de-exclamação-30 1.png" alt="">
-                    <div class="avisos-texto">
+                <div class="btn-avisos_wrapper">
+                    <button class="avisos start-0">
+                        <img width="42" height="42" src="./img/icons8-ponto-de-exclamação-30 1.png" alt="">
+                    </button>
+                    <div class="avisos-texto position-absolute">
                         <h6>Transferências de conta indisponíveis</h6>
                         <span><i class="fa fa-clock" aria-hidden="true"></i>22/09/2021 13:49</span>
                         <p> As transferências de conta estao indisponíveis enquanto trabalhamos na solução de um problema.</p>
@@ -78,7 +80,7 @@
 
                         <a class="text-uppercase" href="#">mais detalhes</a>
                     </div>
-                </button>
+                </div>
 
                 <div class="btn-group dropstart position-absolute menu-main">
                     <button type="button" class="menu-btn" data-bs-toggle="dropdown" aria-expanded="false">
@@ -86,7 +88,7 @@
                     </button>
                     <ul class="dropdown-menu">
                         <li><a class="text-uppercase" href="#">configurações</a></li>
-                        <li><a class="sessao text-uppercase" href="#">encerrar sessão</a></li>
+                        <li><a class="sessao text-uppercase">encerrar sessão</a></li>
                         <li><a class="text-uppercase" href="#">sair</a></li>
                     </ul>
                 </div>

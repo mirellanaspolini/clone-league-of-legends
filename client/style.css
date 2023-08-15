@@ -488,21 +488,20 @@
     object-fit: contain;
 }
 
-.promocao-25:before,
-.promocao-30:before,
-.promocao-40:before,
-.promocao-45:before,
-.promocao-50:before,
-.promocao-55:before,
-.promocao-60:before {
+.card[data-promocao]::before {
     position: absolute;
-    top: 10px;
-    left: 5px;
+    top: 2px;
+    left: 2px;
     color: #f0f0f0;
     z-index: 5;
-    font-weight: 400;
-    font-family: initial;
+    font-weight: 600;
+    font-family: sans-serif;
     font-size: 13px;
+    padding: 1rem .8rem ;
+    border-radius: 100%;
+    background-image: url('./img/loja/desconto.png');
+    background-size: contain;
+    background-position: center;
 }
 
 .promocao-25:before {
