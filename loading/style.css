@@ -1,10 +1,10 @@
 @import "../global.css";
 
 .img {
-    margin-left: calc(50% - 200px);
-    margin-top: calc(23% - 53px);
     position: absolute;
-    z-index: 5;
+    z-index: 9999;
+    inset: 50% 50%;
+    transform: translate(-50%, -50%);
 }
 
 .main {

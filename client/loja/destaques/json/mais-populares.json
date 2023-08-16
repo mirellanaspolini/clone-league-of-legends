@@ -1,0 +1,198 @@
+[
+    {
+        "id": 1,
+        "img": "https://live.staticflickr.com/65535/52265497611_456fb5bf3e_q.jpg",
+        "name": "Baú Hextec",
+        "price": 125,
+        "promotion": [false, 0]
+    },
+    {
+        "id": 2,
+        "img": "https://live.staticflickr.com/65535/52265760564_9fd67ac61e_q.jpg",
+        "name": "chave hextec",
+        "price": 125,
+        "promotion": [false, 0]
+    },
+    {
+        "id": 3,
+        "img": "https://live.staticflickr.com/65535/52265978005_6f836517e6_q.jpg",
+        "name": "10 Baús e Chaves Hextec + 1 conjunto adicional!",
+        "price": 1950,
+        "promotion": [false, 0]
+    },
+    {
+        "id": 4,
+        "img": "https://live.staticflickr.com/65535/52265760884_9535f3e1b4_q.jpg",
+        "name": "Pacote 1 Baú e Chave do Mestre-artesão",
+        "price": 225,
+        "promotion": [false, 0]
+    },
+    {
+        "id": 5,
+        "img": "https://live.staticflickr.com/65535/52264529017_16d1ec35fe_q.jpg",
+        "name": "10 Baús e Chaves do Mestre-artesão + 1 conjunto adicional!",
+        "price": 880,
+        "promotion": [false, 0]
+    },
+    {
+        "id": 6,
+        "img": "https://live.staticflickr.com/65535/52264529177_b23071bda4_q.jpg",
+        "name": "kindred supergalácticos",
+        "price": 540,
+        "promotion": [true, 0.6]
+    },
+    {
+        "id": 7,
+        "img": "https://live.staticflickr.com/65535/52265760844_d91a4254b2_q.jpg",
+        "name": "xin zhao defensor cósmico",
+        "price": 607,
+        "promotion": [true, 0.55]
+    },
+    {
+        "id": 8,
+        "img": "https://live.staticflickr.com/65535/52264529112_66ee6934ae_q.jpg",
+        "name": "gnarossauro",
+        "price": 487,
+        "promotion": [true, 0.5]
+    },
+    {
+        "id": 9,
+        "img": "https://live.staticflickr.com/65535/52265760774_1c77528f72_q.jpg",
+        "name": "maokai quebra-mundos",
+        "price": 944,
+        "promotion": [true, 0.3]
+    },
+    {
+        "id": 10,
+        "img": "https://live.staticflickr.com/65535/52265511398_0eae3290fc_q.jpg",
+        "name": "sion bárbaro",
+        "price": 562,
+        "promotion": [true, 0.25]
+    },
+    {
+        "id": 11,
+        "img": "https://live.staticflickr.com/65535/52265978265_06e1e65c2e_q.jpg",
+        "name": "blitzcrank chefão",
+        "price": 540,
+        "promotion": [true, 0.6]
+    },
+    {
+        "id": 12,
+        "img": "https://live.staticflickr.com/65535/52265978015_a17ba11470_q.jpg",
+        "name": "vayne florescer espiritual cósmico",
+        "price": 675,
+        "promotion": [true, 0.5]
+    },
+    {
+        "id": 13,
+        "img": "https://live.staticflickr.com/65535/52265760819_145770edb3_q.jpg",
+        "name": "elise lua sangrenta",
+        "price": 585,
+        "promotion": [true, 0.4]
+    },
+    {
+        "id": 14,
+        "img": "https://live.staticflickr.com/65535/52265760794_0c16d57bc7_q.jpg",
+        "name": "jax oriental",
+        "price": 375,
+        "promotion": [true, 0.5]
+    },
+    {
+        "id": 15,
+        "img": "https://live.staticflickr.com/65535/52265978260_04a3a35a57_q.jpg",
+        "name": "ezreal protetor de porcelana",
+        "price": "adquirido",
+        "promotion": [true, 0.25]
+    },
+    {
+        "id": 16,
+        "img": "https://live.staticflickr.com/65535/52265760804_2c0882611f_q.jpg",
+        "name": "cassiopeia presas de jade",
+        "price": 536,
+        "promotion": [true, 0.45]
+    },
+    {
+        "id": 17,
+        "img": "https://live.staticflickr.com/65535/52264529237_4eb1f1cb92_q.jpg",
+        "name": "Shyvana chamas negras",
+        "price": 487,
+        "promotion": [true, 0.5]
+    },
+    {
+        "id": 18,
+        "img": "https://live.staticflickr.com/65535/52265497531_d6680dfccf_q.jpg",
+        "name": "shen mestre samurai",
+        "price": 390,
+        "promotion": [true, 0.6]
+    },
+    {
+        "id": 19,
+        "img": "https://live.staticflickr.com/65535/52265511403_95282d35e4_q.jpg",
+        "name": "Rek'Sai eternum",
+        "price": 742,
+        "promotion": [true, 0.45]
+    },
+    {
+        "id": 20,
+        "img": "https://live.staticflickr.com/65535/52265760764_a06b8c3e94_q.jpg",
+        "name": "gragas operação no ártico",
+        "price": 607,
+        "promotion": [true, 0.55]
+    },
+    {
+        "id": 21,
+        "img": "https://live.staticflickr.com/65535/52265511298_a8562e4b4e_q.jpg",
+        "name": "Twisted Fate",
+        "price": [0,0,"adquirido"],
+        "promotion": [true, 0.55]
+    },
+    {
+        "id": 22,
+        "img": "https://live.staticflickr.com/65535/52264529132_3f62a83cb7_q.jpg",
+        "name": "aphelios",
+        "price": [536, 6300],
+        "promotion": [true, 0.45]
+    },
+    {
+        "id": 23,
+        "img": "",
+        "name": "elise lua sangrenta",
+        "price": 585,
+        "promotion": [true, 0.6]
+    },
+    {
+        "id": 24,
+        "img": "",
+        "name": "elise lua sangrenta",
+        "price": 585,
+        "promotion": [true, 0.4]
+    },
+    {
+        "id": 25,
+        "img": "https://live.staticflickr.com/65535/52265760819_145770edb3_q.jpg",
+        "name": "elise lua sangrenta",
+        "price": 585,
+        "promotion": [true, 0.4]
+    },
+    {
+        "id": 26,
+        "img": "https://live.staticflickr.com/65535/52265760819_145770edb3_q.jpg",
+        "name": "elise lua sangrenta",
+        "price": 585,
+        "promotion": [true, 0.4]
+    },
+    {
+        "id": 27,
+        "img": "https://live.staticflickr.com/65535/52265760819_145770edb3_q.jpg",
+        "name": "elise lua sangrenta",
+        "price": 585,
+        "promotion": [true, 0.4]
+    },
+    {
+        "id": 28,
+        "img": "https://live.staticflickr.com/65535/52265760819_145770edb3_q.jpg",
+        "name": "elise lua sangrenta",
+        "price": 585,
+        "promotion": [true, 0.4]
+    }
+]
