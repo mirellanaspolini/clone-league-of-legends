@@ -130,7 +130,6 @@
     width: 28px;
     height: 28px;
     border-radius: 50%;
-    background-color: #3f5996;
     color: #d2c195;
     background-color: #1e2328;
     border: 2px solid #c8a765;
@@ -324,21 +323,11 @@
 /* social - status */
 .status {
     position: relative;
+    white-space: nowrap;
 }
 
 .online {
     color: #057733;
-}
-
-.online::before {
-    content: "";
-    position: absolute;
-    left: -19px;
-    bottom: 4px;
-    width: 15px;
-    height: 15px;
-    background-size: cover;
-    background-image: url(./img/social/status/online.svg);
 }
 
 .header-client .online::before {
@@ -355,7 +344,7 @@
     color: #0ab4b0;
 }
 
-.azul::before {
+.status::before {
     content: "";
     position: absolute;
     left: -19px;
@@ -363,39 +352,25 @@
     width: 15px;
     height: 15px;
     background-size: cover;
+}
+
+.azul::before {
     background-image: url(./img/social/status/em-partida.svg);
 }
 
+.online::before {
+    background-image: url(./img/social/status/online.svg);
+}
+
 .offline::before {
-    content: "";
-    position: absolute;
-    left: -19px;
-    bottom: 4px;
-    width: 15px;
-    height: 15px;
-    background-size: cover;
     background-image: url(./img/social/status/offline.svg);
 }
 
 .lol-plus::before {
-    content: "";
-    position: absolute;
-    left: -19px;
-    bottom: 4px;
-    width: 15px;
-    height: 12px;
-    background-size: cover;
     background-image: url(./img/social/status/lol-plus.svg);
 }
 
 .ausente::before {
-    content: "";
-    position: absolute;
-    left: -19px;
-    bottom: 4px;
-    width: 15px;
-    height: 15px;
-    background-size: cover;
     background-image: url(./img/social/status/ausente.svg);
 }
 
@@ -411,8 +386,8 @@
     height: 100%;
     width: 100%;
     padding: 1px;
-    border: 1px solid rgba(128, 128, 128, 0.473);
-    background-color: rgb(0, 13, 24);
+    border: 1px solid #80808079;
+    background-color: #000d18;
     font-family: Roboto;
     text-align: center;
     border-radius: 0;
@@ -458,78 +433,51 @@
 }
 
 /* scrollbars */
-.grid-destaques::-webkit-scrollbar,
-#grid-campeoes::-webkit-scrollbar,
-.social::-webkit-scrollbar {
-    width: 0;
+@supports not (scrollbar-width: none) {
+    .social::-webkit-scrollbar {
+        width: 0;
+        scrollbar-width: none;
+    }
+    .grid-destaques::-webkit-scrollbar,
+    #grid-campeoes::-webkit-scrollbar,
+    .wrapper-pastas::-webkit-scrollbar {
+        width: 6px;
+    }
+    .grid-destaques::-webkit-scrollbar-track,
+    #grid-campeoes::-webkit-scrollbar-track,
+    .wrapper-pastas::-webkit-scrollbar-track {
+        background: #ffffff00;
+    }
+
+    .grid-destaques::-webkit-scrollbar-thumb,
+    #grid-campeoes::-webkit-scrollbar-thumb,
+    .wrapper-pastas::-webkit-scrollbar-thumb {
+        background-color: #1d2327;
+        border-radius: 20px;
+        border: 7px solid #ffffff00;
+    }
 }
 
-.wrapper-pastas::-webkit-scrollbar {
-    width: 6px;
-}
-
-.wrapper-pastas::-webkit-scrollbar-track {
-    background: #ffffff00;
-}
-
-.wrapper-pastas::-webkit-scrollbar-thumb {
-    background-color: #1d2327;
-    border-radius: 20px;
-    border: 7px solid #ffffff00;
+.grid-destaques,
+#grid-campeoes,
+.wrapper-pastas,
+.social {
+    scrollbar-width: none;
 }
 
 /* selo de promoção */
-.promocao-img {
+.card[data-promocao]::before {
     position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 40px;
-    height: 40px;
-    object-fit: contain;
+    color: #f0f0f0;
+    font-family: sans-serif;
+    font-size: 12px;
+    padding: 0.6rem 0.3rem;
+    background: url("./img/loja/desconto.png") no-repeat center;
+    background-size: contain;
 }
 
 .card[data-promocao]::before {
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    color: #f0f0f0;
-    z-index: 5;
-    font-weight: 600;
-    font-family: sans-serif;
-    font-size: 13px;
-    padding: 1rem .8rem ;
-    border-radius: 100%;
-    background-image: url('./img/loja/desconto.png');
-    background-size: contain;
-    background-position: center;
-}
-
-.promocao-25:before {
-    content: "-25%";
-}
-
-.promocao-30:before {
-    content: "-30%";
-}
-
-.promocao-40:before {
-    content: "-40%";
-}
-
-.promocao-45:before {
-    content: "-45%";
-}
-
-.promocao-50:before {
-    content: "-50%";
-}
-
-.promocao-55:before {
-    content: "-55%";
-}
-
-.promocao-60:before {
-    content: "-60%";
+    content: "-" attr(data-percPromocao) "%";
 }
 
 .links-desabilitados {
