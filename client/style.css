@@ -465,20 +465,6 @@
     scrollbar-width: none;
 }
 
-/* selo de promoção */
-.card[data-promocao]::before {
-    position: absolute;
-    color: #f0f0f0;
-    font-family: sans-serif;
-    font-size: 12px;
-    padding: 0.6rem 0.3rem;
-    background: url("./img/loja/desconto.png") no-repeat center;
-    background-size: contain;
-}
-
-.card[data-promocao]::before {
-    content: "-" attr(data-percPromocao) "%";
-}
 
 .links-desabilitados {
     cursor: not-allowed !important;
