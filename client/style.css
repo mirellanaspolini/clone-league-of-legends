@@ -433,25 +433,36 @@
 }
 
 /* scrollbars */
-.grid-destaques::-webkit-scrollbar,
-#grid-campeoes::-webkit-scrollbar,
-.social::-webkit-scrollbar {
-    width: 0;
+@supports not (scrollbar-width: none) {
+    .social::-webkit-scrollbar {
+        width: 0;
+        scrollbar-width: none;
+    }
+    .grid-destaques::-webkit-scrollbar,
+    #grid-campeoes::-webkit-scrollbar,
+    .wrapper-pastas::-webkit-scrollbar {
+        width: 6px;
+    }
+    .grid-destaques::-webkit-scrollbar-track,
+    #grid-campeoes::-webkit-scrollbar-track,
+    .wrapper-pastas::-webkit-scrollbar-track {
+        background: #ffffff00;
+    }
+
+    .grid-destaques::-webkit-scrollbar-thumb,
+    #grid-campeoes::-webkit-scrollbar-thumb,
+    .wrapper-pastas::-webkit-scrollbar-thumb {
+        background-color: #1d2327;
+        border-radius: 20px;
+        border: 7px solid #ffffff00;
+    }
+}
+
+.grid-destaques,
+#grid-campeoes,
+.wrapper-pastas,
+.social {
     scrollbar-width: none;
-}
-
-.wrapper-pastas::-webkit-scrollbar {
-    width: 6px;
-}
-
-.wrapper-pastas::-webkit-scrollbar-track {
-    background: #ffffff00;
-}
-
-.wrapper-pastas::-webkit-scrollbar-thumb {
-    background-color: #1d2327;
-    border-radius: 20px;
-    border: 7px solid #ffffff00;
 }
 
 /* selo de promoção */
