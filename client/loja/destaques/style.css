@@ -171,3 +171,13 @@ p {
     left: 4px;
     height: auto;
 }
+
+.card.impacto-social::after {
+    content: url("../../img/loja/impacto-social.png");
+    display: block;
+    position: absolute;
+    right: 4px;
+    height: auto;
+}
+
+
