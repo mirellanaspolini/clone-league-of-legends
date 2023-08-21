@@ -108,3 +108,29 @@ function abrir_loja_campeoes() {
 
     conteudo_geral.innerHTML = `<object style="height: 100%; width: 100%;" type="text/html" data="./loja/campeoes/index.html"></object>`;
 }
+
+async function carregarSocial() {
+    const dados = await fetch("./json/social.json");
+    const json = await dados.json();
+    const wrapper = document.querySelector(".wrapper-pastas");
+    json.forEach((item) => {
+        wrapper.innerHTML += `<button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#${"nome-da-pasta"}">${"nome da pasta"} (${"total amigos online/lol+"}/${"total de amigos"})</button>
+        <div class="collapse multi-collapse" id="${"nome-da-pasta"}">
+            <ul>
+                ${"INICIO pasta.foreach"}
+                    <li class="social-box">
+                        <img width="36" class="social-img" src=${"foto do amigo"} alt="">
+                        <div>
+                            <p style="color: #929994;">${"nome do amigo"}</p>
+                            <p class="status ${"if em partida ? azul, if online ? online"}">${"status do amigo"}</p>
+                        </div>
+                    </li>
+                ${"FIM pasta.foreach"}
+
+                
+            </ul>
+        </div>`;
+    });
+}
+
+carregarSocial();
