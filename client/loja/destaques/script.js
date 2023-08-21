@@ -5,7 +5,7 @@ async function carregarCards() {
     json.forEach((item) => {
         console.log(item);
 
-        grid.innerHTML += `<div class="card bumumb" data-percPromocao=${
+        grid.innerHTML += `<div class="card" data-percPromocao=${
             item.promotion[0] === true ? parseInt(item.promotion[1] * 100) : ""
         } data-promocao="true">
          <img
@@ -31,7 +31,7 @@ const printaPreco = (item) => {
     if (item.price[1]) {
         return `<p class="preco-rp">${item.price[0]}</p> <p class="preco-ea">${item.price[1]}</p>`;
     }
-    return `<p class="preco-rp">${item.price[0]}</p>`
+    return `<p class="preco-rp">${item.price[0]}</p>`;
 };
 
 carregarCards();
