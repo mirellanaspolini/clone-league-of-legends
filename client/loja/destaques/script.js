@@ -31,7 +31,7 @@ const printaPreco = (item) => {
     if (item.price[1]) {
         return `<p class="preco-rp">${item.price[0]}</p> <p class="preco-ea">${item.price[1]}</p>`;
     }
-    return `<p class="preco-rp">${item.price[0]}</p>`
+    return `<p class="preco-rp">${item.price[0]}</p>`;
 };
 
 carregarCards();
