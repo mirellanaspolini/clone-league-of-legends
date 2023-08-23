@@ -1,7 +1,6 @@
 [
     {
-        "id": 0,
-        "peek-a-boo": [
+        "peek a boo": [
             {
                 "img": "https://live.staticflickr.com/65535/52265757975_a6a9a4499b_s.jpg",
                 "name": "MXVIII",
@@ -50,6 +49,114 @@
             {
                 "img": "https://live.staticflickr.com/65535/52265757965_4a344ac797_s.jpg",
                 "name": "xVanilla",
+                "status": "Offline"
+            }
+        ]
+    },
+    {
+        "amigos queridos": [
+            {
+                "img": "https://live.staticflickr.com/65535/52265276156_626e9461d0_s.jpg",
+                "name": "Dr Gangplank",
+                "status": "Online"
+            },
+            {
+                "img": "https://live.staticflickr.com/65535/52266185089_1fe4ab4a2e_s.jpg",
+                "name": "Zilean Djamba",
+                "status": "Seleção de Campeões"
+            },
+            {
+                "img": "https://live.staticflickr.com/65535/52265757865_31b168ae39_s.jpg",
+                "name": "GÍVË in",
+                "status": "LoL+"
+            },
+            {
+                "img": "https://live.staticflickr.com/65535/52265757935_ae69e852d5_s.jpg",
+                "name": "Tiwa",
+                "status": "LoL+"
+            },
+            {
+                "img": "https://live.staticflickr.com/65535/52265292318_b1720c890c_s.jpg",
+                "name": "CSS HTML JS",
+                "status": "Offline"
+            },
+            {
+                "img": "https://live.staticflickr.com/65535/52265795675_7e0f7766cc_s.jpg",
+                "name": "H O L Y C K",
+                "status": "Offline"
+            },
+            {
+                "img": "https://live.staticflickr.com/65535/52265758050_694bf7be8c_s.jpg",
+                "name": "Hudax",
+                "status": "Offline"
+            },
+            {
+                "img": "https://live.staticflickr.com/65535/52265333353_6069133217_s.jpg",
+                "name": "LockharTiifa",
+                "status": "Offline"
+            },
+            {
+                "img": "https://live.staticflickr.com/65535/52265292368_2f761662cf_n.jpg",
+                "name": "Uni Pastelly",
+                "status": "Offline"
+            }
+        ]
+    },
+    {
+        "geral": [
+            {
+                "img": "https://live.staticflickr.com/65535/52265276101_2cc165d4aa_s.jpg",
+                "name": "Heimkidall",
+                "status": "Lol+"
+            },
+            {
+                "img": "https://live.staticflickr.com/65535/52265292398_813b592056_s.jpg",
+                "name": "whas",
+                "status": "Lol+"
+            },
+            {
+                "img": "https://live.staticflickr.com/65535/52264309317_57ce17d4bf_s.jpg",
+                "name": "Vulgo Dae Jung",
+                "status": "Criando partida de TFT"
+            },
+            {
+                "img": "https://live.staticflickr.com/65535/52265542894_9e54d11b1b_s.jpg",
+                "name": "Doblax",
+                "status": "Offline"
+            },
+            {
+                "img": "https://live.staticflickr.com/65535/52265314096_cf1382f873_s.jpg",
+                "name": "Fifi Frank",
+                "status": "Offline"
+            },
+            {
+                "img": "https://live.staticflickr.com/65535/52265918596_7fbb197e3e_s.jpg",
+                "name": "Insoniamc",
+                "status": "Offline"
+            },
+            {
+                "img": "https://live.staticflickr.com/65535/52265758040_94411664e0_s.jpg",
+                "name": "Joinvillense",
+                "status": "Offline"
+            },
+            {
+                "img": "https://live.staticflickr.com/65535/52265542769_f7b3ac88e7_s.jpg",
+                "name": "Proffãno",
+                "status": "Offline"
+            },
+            {
+                "img": "https://live.staticflickr.com/65535/52265292418_692abde586_s.jpg",
+                "name": "robocoppe",
+                "status": "Offline"
+            },
+            {
+                "img": "https://live.staticflickr.com/65535/52265757790_a13d79266d_s.jpg",
+                "name": "Sch0lar",
+                "status": "Offline"
+            },
+            {
+                "img": "https://live.staticflickr.com/65535/52264346432_6841aa14c3_s.jpg",
+                "name": "ur dead to me",
                 "status": "Offline"
             }
         ]

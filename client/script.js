@@ -113,23 +113,49 @@ async function carregarSocial() {
     const dados = await fetch("./json/social.json");
     const json = await dados.json();
     const wrapper = document.querySelector(".wrapper-pastas");
-    json.forEach((item) => {
-        wrapper.innerHTML += `<button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#${"nome-da-pasta"}">${"nome da pasta"} (${"total amigos online/lol+"}/${"total de amigos"})</button>
-        <div class="collapse multi-collapse" id="${"nome-da-pasta"}">
-            <ul>
-                ${"INICIO pasta.foreach"}
-                    <li class="social-box">
-                        <img width="36" class="social-img" src=${"foto do amigo"} alt="">
-                        <div>
-                            <p style="color: #929994;">${"nome do amigo"}</p>
-                            <p class="status ${"if em partida ? azul, if online ? online"}">${"status do amigo"}</p>
-                        </div>
-                    </li>
-                ${"FIM pasta.foreach"}
+    json.forEach((pasta, indice) => {
+        for (const [key, value] of Object.entries(pasta)) {
+            // console.log(value);
+            let totalamigos = 0;
+            if (value.status !== "Offline") {
+                totalamigos++;
+            }
 
-                
-            </ul>
-        </div>`;
+            const nomepasta = key.replace(/ /g, "-");
+
+
+            wrapper.innerHTML += `
+                 <button class="btn text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#${nomepasta}">${key} (${totalamigos}/${
+                value.length
+            })</button>
+            <div class="collapse multi-collapse" id="${nomepasta}">
+                    <ul></ul>
+                </div>`;
+
+            Object.entries(value).forEach(([key, value]) => {
+                wrapper.querySelector(`#${nomepasta} ul`).innerHTML += `                
+                            <li class="social-box">
+                                <img width="36" class="social-img" src=${
+                                    value.img
+                                } alt="">
+                                <div>
+                                    <p style="color: #929994;">${value.name}</p>
+                                    <p class="status ${
+                                        value.status === "Em partida" || value.status === "Seleção de Campeões"
+                                            ? "azul"
+                                            : value.status === "Online"
+                                            ? "online"
+                                            : value.status === "Lol+"
+                                            ? "lol-plus"
+                                            : value.status === "Criando partida de TFT"
+                                            ? "ausente"
+                                            : "offline"
+                                    }">${value.status}</p>
+                                </div>
+                            </li>
+                `;
+            });
+        }
     });
 }
 
