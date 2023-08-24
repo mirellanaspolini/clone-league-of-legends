@@ -17,21 +17,24 @@ async function carregarCards() {
          <div class="card-info-bg">
              <p class="text-capitalize">${item.name}</p>
              <span id="precos-box">
-                ${printaPreco(item)}
+                
              </span>
          </div>
          </div>`;
     });
+    
+    printaPreco(item);
 }
 
 const printaPreco = (item) => {
+    const box = document.getElementById("precos-box").innerHTML;
     if (item.price[2]) {
-        return "<p>adquirido</p>";
+        return (box = "<p>adquirido</p>");
     }
     if (item.price[1]) {
-        return `<p class="preco-rp">${item.price[0]}</p> <p class="preco-ea">${item.price[1]}</p>`;
+        return (box = `<p class="preco-rp">${item.price[0]}</p> <p class="preco-ea">${item.price[1]}</p>`);
     }
-    return `<p class="preco-rp">${item.price[0]}</p>`;
+    return (box = `<p class="preco-rp">${item.price[0]}</p>`);
 };
 
 carregarCards();

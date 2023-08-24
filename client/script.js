@@ -17,6 +17,20 @@ const devs = [
     },
 ];
 
+const printDevs = (lista) => {
+    lista.forEach((dev) => {
+        document.querySelector(".info-devs").innerHTML += `<div class="devs">
+            <h3 style="margin-bottom: 6px;">${dev.nome}</h3>
+            <a href="${dev.github}" target="_blank">
+                <i style="margin-right: 6px;" class="fab fa fa-github" aria-hidden="true"></i>
+            </a>
+            <a href="${dev.linkedin}" target="_blank">
+                <i class="fab fa fa-linkedin-square" aria-hidden="true"></i>
+            </a>
+        </div>`;
+    });
+};
+
 function abrir_inicio() {
     header.innerHTML = `
     <nav>
@@ -44,32 +58,25 @@ function abrir_inicio() {
             </div>
         </div>
         <!-- SEGUNDO -->
-        <div class="carousel-item">
+        <div class="carousel-item ">
             <div class="desenvolvido">
                 <h2 style="margin-bottom: 18px;font-weight: 700;">DESENVOLVIDO POR:</h2>
-                <div class="info-devs"> ${devs.forEach((dev) => {
-                    return `<div class="devs">
-                        <h3 style="margin-bottom: 6px;">${dev.nome}</h3>
-                        <a href="${dev.github}" target="_blank">
-                            <i style="margin-right: 6px;" class="fab fa fa-github" aria-hidden="true"></i>
-                        </a>
-                        <a href="${dev.linkedin}" target="_blank">
-                            <i class="fab fa fa-linkedin-square" aria-hidden="true"></i>
-                        </a>
-                    </div>`;
-                })} </div>
+                <div class="info-devs"></div>
             </div>
         </div>
     </div>
     </div>
     <img src="https://live.staticflickr.com/65535/52280173860_fbdca2d4ee_h.jpg" width="800" height="510" alt="wallpaper">`;
 
+    printDevs(devs);
+
     botaoInicio.add("ativo");
     botaoLoja.remove("ativo");
 }
 
 function abrir_loja() {
-    textoNav("abrir_loja_campeoes()");
+    textoNav();
+
     listaClasses.add("header-destaques");
     listaClasses.remove("header-inicio");
     listaClasses.remove("header-campeoes");
@@ -81,11 +88,11 @@ function abrir_loja() {
 }
 
 function abrir_loja_campeoes() {
-    textoNav("abrir_loja()");
+    textoNav();
 
-    header.classList.add("header-campeoes");
-    header.classList.remove("header-destaques");
-    header.classList.remove("header-inicio");
+    listaClasses.add("header-campeoes");
+    listaClasses.remove("header-destaques");
+    listaClasses.remove("header-inicio");
 
     exibeConteudo("campeoes");
 }
@@ -99,7 +106,7 @@ async function carregarSocial() {
         Object.entries(lista).forEach(([key, value]) => {
             wrapper.querySelector(`#${pasta} ul`).innerHTML += `                
             <li class="social-box">
-            <img width="36" class="social-img" src=${value.img} alt="">
+            <img width="36" class="social-img" src=${value.img} alt="Ícone do invocador">
             <div>
             <p style="color: #929994;">${value.name}</p>
         <p class="status ${statusCor(value.status)}">${value.status}</p>
@@ -124,11 +131,11 @@ async function carregarSocial() {
     });
 }
 
-const textoNav = (funcaoDoOnclick) => {
+const textoNav = () => {
     header.innerHTML = `<nav>
         <ul class="d-flex gap-4 text-uppercase">
-           <li style="cursor: pointer;" onclick="${funcaoDoOnclick}">destaques</li>
-        <li style="cursor: pointer;" onclick="${funcaoDoOnclick}">campeões</li>
+           <li style="cursor: pointer;" onclick="abrir_loja()">destaques</li>
+        <li style="cursor: pointer;" onclick="abrir_loja_campeoes()">campeões</li>
             <li class="links-desabilitados">skins</li>
             <li class="links-desabilitados">tft</li>
             <li class="links-desabilitados">espólios</li>
@@ -137,8 +144,8 @@ const textoNav = (funcaoDoOnclick) => {
     </nav>
     <div class="d-flex gap-3 header-destaques-botoes">
         <button class="links-desabilitados">COMPRE RP</button>
-        <button class="links-desabilitados"><img src="./img/loja/presentes-icone.svg" alt=""></button>
-        <button class="links-desabilitados"><img src="./img/loja/configuracoes-icone.svg" alt=""></button>
+        <button class="links-desabilitados"><img src="./img/loja/presentes-icone.svg" alt="Dar presente"></button>
+        <button class="links-desabilitados"><img src="./img/loja/configuracoes-icone.svg" alt="Configurações"></button>
     </div>`;
 };
 
@@ -154,5 +161,7 @@ const statusCor = (value) => {
 const exibeConteudo = (pagina) => {
     conteudoGeral.innerHTML = `<object style="height: 100%; width: 100%;" type="text/html" data="./loja/${pagina}/index.html"></object>`;
 };
+
+printDevs(devs);
 
 carregarSocial();

@@ -24,8 +24,7 @@ function login() {
         lblUsuario_valor === usuarioCadastrado
     ) {
         setTimeout(() => {
-            // location.href = "/clone-league-of-legends/loading/";
-            location.href = "/loading/";
+            location.href = "/clone-league-of-legends/loading/";
         }, 1500);
     } else {
         let lblUsuario = document.querySelector(".lblUsuario");

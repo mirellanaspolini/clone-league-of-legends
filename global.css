@@ -32,12 +32,12 @@ a {
     color: inherit;
 }
 
-button {
-    outline: none;
-}
-
 a:hover {
     color: inherit;
+}
+
+button {
+    outline: none;
 }
 
 .main {
@@ -46,4 +46,12 @@ a:hover {
     height: 576px;
     margin: auto;
     background-color: #010a13;
+}
+
+select,
+input[type="search"],
+card,
+p,
+label {
+    font-family: Roboto;
 }
