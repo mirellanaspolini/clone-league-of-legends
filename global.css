@@ -49,9 +49,10 @@ button {
 }
 
 select,
-input[type="search"],
+input,
 card,
-p,
+p:not(.rp, .essencia-azul, .p-social),
 label {
-    font-family: Roboto;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 600;
 }

@@ -22,7 +22,7 @@ label {
     width: 100%;
     height: 100%;
     grid-template-columns: repeat(4, minmax(130px, 1fr));
-    grid-template-rows: 150px 150px 150px 150px;
+    grid-template-rows: repeat(4, 150px);
     grid-auto-rows: 150px;
     gap: 0.5rem;
     padding: 1rem;
@@ -43,11 +43,6 @@ input[type="radio"] {
     vertical-align: middle;
 }
 
-select,
-input[type="search"] {
-    font-size: 12px;
-}
-
 input[type="checkbox"],
 input[type="radio"] {
     appearance: none;
@@ -62,23 +57,25 @@ input[type="radio"] {
     transform: rotate(45deg);
 }
 
-input[type="radio"]:checked::after {
+input[type="radio"]:checked::after,
+input[type="checkbox"]:checked::after {
     content: "";
     display: block;
+    border-width: 0 2px 2px 0;
+}
+
+input[type="radio"]:checked::after {
     width: 5.5px;
     height: 5.5px;
     background-color: #c89b3c;
-    border-width: 0 2px 2px 0;
     margin: 1px 1px;
 }
 
 input[type="checkbox"]:checked::after {
-    content: "";
-    display: block;
     width: 5px;
     height: 8px;
-    border: 1px solid #c89b3c;
-    border-width: 0 2px 2px 0;
+    border-bottom: 2px solid #c89b3c;
+    border-right: 2px solid #c89b3c;
     transform: rotate(45deg);
     margin: -2px 2px;
 }
@@ -94,13 +91,9 @@ input[type="search"] {
     border: 1px solid #a8853a;
     color: #f5f5dc;
     outline: none;
-}
+    padding: 0 8px;
+    font-size: 12px;
 
-#select-sorting-method {
-    appearance: none;
-    border: 1px solid #a8853a;
-    padding: 5px;
-    height: 30px;
 }
 
 fieldset {

@@ -1,11 +1,11 @@
-const loading_gif = document.querySelector(".loading");
-loading_gif.innerHTML = `<img class="img" width="400" src="gif-loading.gif">`;
+const loadingGif = document.querySelector(".loading");
+loadingGif.innerHTML = `<img class="loading-gif" width="400" src="gif-loading.gif">`;
 
-const x = document.querySelector(".img");
+const gif = document.querySelector(".loading-gif");
 setTimeout(() => {
-    x.style.display = "none";
+    gif.style.display = "none";
     document.querySelector(".client").style.visibility = "visible";
     setTimeout(() => {
-        location.href = "/clone-league-of-legends/client/";
+        // location.href = "/clone-league-of-legends/client/";
     }, 2500);
 }, 2500);

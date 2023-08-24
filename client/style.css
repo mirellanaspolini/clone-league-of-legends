@@ -44,7 +44,7 @@
     padding: 0 1rem;
     border-bottom: 1px solid #343d44;
     border-top: 3px solid #6f5d39;
-    background-color: #010a13;
+    /* background-color: #010a13; */
 }
 
 .header-client a,
@@ -174,7 +174,7 @@
 .decorador {
     width: 1px;
     height: 40px;
-    background-color: rgba(233, 198, 132, 0.274);
+    background-color: #e9c68446;
     margin: 0 1.4rem;
     margin-left: 0.5rem;
     border-radius: 170%;
@@ -190,11 +190,11 @@
     width: 390px;
     padding: 2rem;
     border-radius: 40px;
-    background: rgba(177, 177, 177, 0.295);
+    background: #b1b1b14b;
     -webkit-backdrop-filter: blur(23px);
     backdrop-filter: blur(23px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    color: white;
+    border: 1px solid #ffffff1a;
+    color: fff;
     text-shadow: 1px 2px 1px #00000049;
 }
 
@@ -269,7 +269,7 @@
     overflow-y: scroll;
 }
 
-.btn {
+.social .btn {
     width: 100%;
     padding: 5px 10px;
     border: none;
@@ -280,9 +280,9 @@
     color: #929994;
 }
 
-.btn:hover,
-.btn:focus {
-    color: #929994;
+.social .btn:hover,
+.social .btn:focus {
+    color: #b9b9b9;
 }
 
 .social-box {

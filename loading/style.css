@@ -1,6 +1,6 @@
 @import "../global.css";
 
-.img {
+.loading-gif {
     position: absolute;
     z-index: 9999;
     inset: 50% 50%;
@@ -8,7 +8,6 @@
 }
 
 .main {
-    background-color: #010a13;
     visibility: hidden;
 }
 
@@ -37,43 +36,39 @@ header {
 
 /* loader */
 .loader {
+    position: relative;
     margin: auto;
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 50%;
-    background: #0ab4b0;
     background: linear-gradient(to right, #0ab4b0 10%, #ffffff00 42%);
-    position: relative;
-    animation: load3 1.2s infinite linear;
+    animation: load 1.2s infinite linear;
     transform: translateZ(0);
 }
 
 .loader:before {
+    content: "";
+    position: absolute;
     width: 50%;
     height: 50%;
     background: #0ab4b0;
     border-radius: 100% 0 0 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: "";
+    inset: 0;
+
 }
 
 .loader:after {
+    content: "";
+    position: absolute;
     background: #030e17;
     width: 75%;
     height: 75%;
     border-radius: 50%;
-    content: "";
     margin: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+    inset: 0;
 }
 
-@keyframes load3 {
+@keyframes load {
     0% {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
