@@ -61,8 +61,7 @@ img {
 
 .carousel-indicators {
     justify-content: end;
-    margin-right: 0.7rem;
-    margin-bottom: 0.7rem;
+    margin: 0 0.7rem 0.7rem 0;
 }
 
 .carousel-indicators .active {
@@ -84,14 +83,6 @@ img {
     font-weight: 700;
 }
 
-.carousel-caption p {
-    margin-bottom: 0;
-}
-
-.carousel-item {
-    font-size: 14px;
-}
-
 p {
     font-weight: normal;
     color: #b8b8b8;
@@ -104,28 +95,25 @@ p {
     grid-area: prime;
     margin-top: 10px;
     height: 70px;
-    width: 100%;
+    /* width: 100%; */
     border: 1px solid #80808078;
     background-color: #010a14bd;
     color: #f5f0ec;
 }
 
-.prime img:first-child {
+.prime .prime-logo{
     position: relative;
     top: 0px;
     width: 200px;
     height: max-content;
 }
 
-.prime img:last-child {
-    width: 110px;
-}
-
-.prime button {
+.prime .prime-btnResgatar {
     margin-right: 10px;
 }
 
-.separador {
+.prime-separador {
+    display: block;
     height: 50%;
     width: 1px;
     background-color: #3b4352;
@@ -155,18 +143,18 @@ p {
     content: "-" attr(data-percPromocao) "%";
 }
 
-.card.destaques-conjunto::before {
-    content: url("../../img/loja/tempo-limitado.png");
+.card.destaques-conjunto::before, .card.impacto-social::after {
     display: block;
     position: absolute;
-    left: 4px;
     height: auto;
+}
+
+.card.destaques-conjunto::before {
+    content: url("../../img/loja/tempo-limitado.png");
+    left: 4px;
 }
 
 .card.impacto-social::after {
     content: url("../../img/loja/impacto-social.png");
-    display: block;
-    position: absolute;
     right: 4px;
-    height: auto;
 }

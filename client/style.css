@@ -13,13 +13,6 @@
     src: url("../BeaufortForLOL/beaufortforlol-medium.otf");
 }
 
-.main {
-    background-color: #010a13;
-    font-family: "Beaufort for LOL";
-    font-weight: 700;
-    font-size: 30px;
-}
-
 .main.client {
     position: relative;
     display: grid;
@@ -28,6 +21,7 @@
         "header header"
         "geral social";
     grid-template-rows: max-content;
+    font-family: "Beaufort for LOL";
 }
 
 .geral {
@@ -44,17 +38,6 @@
     padding: 0 1rem;
     border-bottom: 1px solid #343d44;
     border-top: 3px solid #6f5d39;
-    /* background-color: #010a13; */
-}
-
-.header-client a,
-.header-client h6,
-.header-client img:nth-of-type(2) {
-    margin: 0 0.5rem;
-}
-
-.header-client img:nth-of-type(1) {
-    margin-right: 0.6rem;
 }
 
 .header-client h6 {
@@ -143,25 +126,15 @@
     width: initial;
     padding: 0.1rem 1rem;
     border-radius: initial;
-    border: none;
     background-color: #1e2328;
     border: 2px solid #c8a765;
     font-size: 14px;
     letter-spacing: 1px;
     color: #d2c195;
-    margin-top: 0;
 }
 
-.header-destaques li:first-of-type {
-    border-bottom: 1px solid #f0e7cf;
-    color: #f0e7cf;
-}
-
-.header-inicio li:nth-of-type(2) {
-    border-bottom: 1px solid #f0e7cf;
-    color: #f0e7cf;
-}
-
+.header-destaques li:first-of-type,
+.header-inicio li:nth-of-type(2),
 .header-campeoes li:nth-of-type(2) {
     border-bottom: 1px solid #f0e7cf;
     color: #f0e7cf;
@@ -175,9 +148,7 @@
     width: 1px;
     height: 40px;
     background-color: #e9c68446;
-    margin: 0 1.4rem;
-    margin-left: 0.5rem;
-    border-radius: 170%;
+    margin: 0 1.4rem 0 0.5rem;
 }
 
 .carrossel-inicio {
@@ -194,8 +165,9 @@
     -webkit-backdrop-filter: blur(23px);
     backdrop-filter: blur(23px);
     border: 1px solid #ffffff1a;
-    color: fff;
+    color: #fff;
     text-shadow: 1px 2px 1px #00000049;
+    font-family: "Lexend Deca", sans-serif;
 }
 
 .info-devs {
@@ -208,7 +180,11 @@
 }
 
 .devs h3 {
-    font-size: 19px;
+    font-size: 18px;
+}
+
+.devs a {
+    font-size: 30px;
 }
 
 .direitos {
@@ -316,28 +292,18 @@
     font-family: "Beaufort for LOL";
 }
 
+.social .usuario-amigo {
+    color: #929994;
+    font-family: "roboto";
+    font-weight: 400;
+    white-space: nowrap;
+}
+
 /* social - status */
 .status {
     position: relative;
     white-space: nowrap;
-}
-
-.online {
-    color: #057733;
-}
-
-.header-client .online::before {
-    position: initial;
-    display: inline-block;
-    width: 18px;
-    height: 18px;
-    margin-right: 3px;
-    vertical-align: top;
-    background-size: contain;
-}
-
-.azul {
-    color: #0ab4b0;
+    font-weight: normal;
 }
 
 .status::before {
@@ -348,6 +314,23 @@
     width: 15px;
     height: 15px;
     background-size: cover;
+}
+
+.header-client .online::before {
+    position: initial;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 3px;
+    vertical-align: top;
+}
+
+.azul {
+    color: #0ab4b0;
+}
+
+.online {
+    color: #057733;
 }
 
 .azul::before {
@@ -401,16 +384,16 @@
     background: linear-gradient(transparent, #000);
 }
 
-.card-info-bg span {
+.card[data-promocao] span {
     display: flex;
     gap: 14px;
 }
 
-.card-info-bg span p {
+.card-info-bg #precos-box p {
     color: #ac957e;
 }
 
-.card-info-bg p {
+.card-info-bg .nome-campeao {
     color: #fff;
 }
 

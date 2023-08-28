@@ -60,7 +60,7 @@ function abrir_inicio() {
         <!-- SEGUNDO -->
         <div class="carousel-item ">
             <div class="desenvolvido">
-                <h2 style="margin-bottom: 18px;font-weight: 700;">DESENVOLVIDO POR:</h2>
+                <h2 class="fs-3 mb-3 fw-bold">DESENVOLVIDO POR:</h2>
                 <div class="info-devs"></div>
             </div>
         </div>
@@ -106,9 +106,11 @@ async function carregarSocial() {
         Object.entries(lista).forEach(([key, value]) => {
             wrapper.querySelector(`#${pasta} ul`).innerHTML += `                
             <li class="social-box">
-            <img width="36" class="social-img" src=${value.img} alt="Ícone do invocador">
+            <img width="36" class="social-img" src=${
+                value.img
+            } alt="Ícone do invocador">
             <div>
-            <p style="color: #929994;">${value.name}</p>
+            <p class="usuario-amigo" style="color: #929994;">${value.name}</p>
         <p class="status ${statusCor(value.status)}">${value.status}</p>
                     </div>
                 </li>`;

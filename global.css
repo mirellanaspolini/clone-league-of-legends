@@ -2,8 +2,7 @@ body {
     display: flex;
     min-height: 100vh;
     margin: 0;
-    font-family: "Lexend Deca", sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     cursor: default;
 }
 
@@ -20,6 +19,10 @@ h5,
 h6,
 p {
     margin: 0;
+}
+
+.fs-7 {
+    font-size: 14px;
 }
 
 ul {
@@ -46,6 +49,7 @@ button {
     height: 576px;
     margin: auto;
     background-color: #010a13;
+    font-family: "Beaufort for LOL";
 }
 
 select,

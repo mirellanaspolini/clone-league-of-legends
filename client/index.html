@@ -12,6 +12,10 @@
             href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
             rel="stylesheet"
         />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;600;700&display=swap"
+            rel="stylesheet"
+        />
 
         <!-- Bootstrap -->
         <link
@@ -37,24 +41,27 @@
             <header class="header-client d-flex justify-content-between">
                 <div style="color: #d2c195" class="d-flex align-items-center">
                     <img
-                        class="links-desabilitados"
+                        class="links-desabilitados mr-2"
                         height="40"
                         src="./img/header/btn-jogar.jpg"
                         alt="Jogar"
                     />
                     <img
-                        class="links-desabilitados"
+                        class="links-desabilitados mx-2"
                         width="26"
                         src="./img/header/avisos.svg"
                         alt="Exibir avisos"
                     />
-                    <button class="botao-inicio ativo" onclick="abrir_inicio()">
+                    <button
+                        class="botao-inicio ativo px-2"
+                        onclick="abrir_inicio()"
+                    >
                         <h6 class="text-uppercase">início</h6>
                     </button>
-                    <button class="links-desabilitados">
+                    <button class="links-desabilitados px-2">
                         <h6 class="text-uppercase">tft</h6>
                     </button>
-                    <button class="links-desabilitados">
+                    <button class="links-desabilitados px-2">
                         <h6 class="text-uppercase">clash</h6>
                     </button>
                 </div>
@@ -95,7 +102,10 @@
                         <p class="essencia-azul">20876</p>
                     </div>
                 </div>
-                <div style="width: 200px" class="d-flex align-items-center">
+                <div
+                    style="width: 200px"
+                    class="d-flex align-items-center gap-1"
+                >
                     <img
                         width="55"
                         src="./img/header/icone-perfil.png"
@@ -103,19 +113,16 @@
                     />
                     <div>
                         <h2
+                            class="fs-7"
                             style="
                                 color: #f9f9f9;
-                                font-size: 14px;
                                 margin-bottom: 2px;
                                 margin-left: 2px;
                             "
                         >
                             Rakänbole
                         </h2>
-                        <p
-                            style="font-family: 'Roboto'; font-size: 12px"
-                            class="status online"
-                        >
+                        <p style="font-size: 12px" class="status online">
                             "tudo jóia?"
                         </p>
                     </div>
@@ -172,17 +179,10 @@
                         <!-- SEGUNDO -->
                         <div class="carousel-item devs">
                             <div class="desenvolvido">
-                                <h2
-                                    style="
-                                        margin-bottom: 18px;
-                                        font-weight: 700;
-                                    "
-                                >
+                                <h2 class="fs-3 mb-3 fw-bold">
                                     DESENVOLVIDO POR:
                                 </h2>
-                                <div class="info-devs">
-                                    
-                                </div>
+                                <div class="info-devs"></div>
                             </div>
                         </div>
                     </div>
@@ -201,10 +201,22 @@
                     <p class="p-social">social</p>
 
                     <div>
-                        <img src="./img/social/adicionar-icone.svg" alt="Adicionar amigo" />
-                        <img src="./img/social/nova-pasta-icone.svg" alt="Nova pasta" />
-                        <img src="./img/social/filtro-icone.svg" alt="Filtrar" />
-                        <img src="./img/social/pesquisar-icone.svg" alt="Pesquisar" />
+                        <img
+                            src="./img/social/adicionar-icone.svg"
+                            alt="Adicionar amigo"
+                        />
+                        <img
+                            src="./img/social/nova-pasta-icone.svg"
+                            alt="Nova pasta"
+                        />
+                        <img
+                            src="./img/social/filtro-icone.svg"
+                            alt="Filtrar"
+                        />
+                        <img
+                            src="./img/social/pesquisar-icone.svg"
+                            alt="Pesquisar"
+                        />
                     </div>
                 </header>
 

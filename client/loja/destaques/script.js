@@ -1,7 +1,7 @@
 async function carregarCards() {
     const dados = await fetch("./json/mais-populares.json");
     const json = await dados.json();
-    const grid = document.querySelector("main");
+    const grid = document.querySelector(".grid-destaques");
     json.forEach((item) => {
         console.log(item);
 
@@ -11,7 +11,7 @@ async function carregarCards() {
             <img
                 src=${item.img} width="240" height="240" alt="" />
             <div class="card-info-bg">
-                <p class="text-capitalize">${item.name}</p>
+                <p class="text-capitalize nome-campeao">${item.name}</p>
                 <span id="precos-box">
                     ${printaPreco(item)}
                 </span>
