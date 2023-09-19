@@ -41,27 +41,28 @@
                     </div>
 
                     <div class="d-flex justify-content-between mb-2 login-buttons">
-                        <button><i class="fab fa fa-facebook fa-inverse" aria-hidden="true"></i><span class="sr-only">Fazer login com o Facebook</span></button>
-                        <button><img height="14" src="./img/google-icon.png" alt="" aria-hidden="true"><span class="sr-only">Fazer login com o Google</span></button>
-                        <button><i class="fab fa fa-apple fa-inverse" aria-hidden="true"></i><span class="sr-only">Fazer login com a Apple</span></button>
+                        <button class="links-desabilitados"><i class="fab fa fa-facebook fa-inverse" aria-hidden="true"></i><span class="sr-only">Fazer login com o Facebook</span></button>
+                        <button class="links-desabilitados"><img height="14" src="./img/google-icon.png" alt="" aria-hidden="true"><span class="sr-only">Fazer login com o Google</span></button>
+                        <button class="links-desabilitados"><i class="fab fa fa-apple fa-inverse" aria-hidden="true"></i><span class="sr-only">Fazer login com a Apple</span></button>
                     </div>
 
                     <fieldset class="d-flex align-items-center">
                         <input class="input-checkbox" type="checkbox" id="checkbox">
                         <label for="checkbox">Manter login</label>
                     </fieldset>
+                    <button type="submit" class="login-button" disabled="true" onclick="login();return false"><img height="26" src="./img/seta.svg" alt="Fazer login"></button>
+                </form>
             </div>
 
             <div>
-                <button type="submit" class="login-button" disabled="true" onclick="login();return false"><img height="26" src="./img/seta.svg" alt="Fazer login"></button>
 
                 <div style="text-align: center;">
-                    <a class="text-uppercase login-links" href="#">não consegue iniciar sessão?</a>
+                    <a class="links-desabilitados text-uppercase login-links" href="#">não consegue iniciar sessão?</a>
                     <br>
-                    <a class="text-uppercase login-links" href="#">criar conta</a>
+                    <a class="links-desabilitados text-uppercase login-links" href="#">criar conta</a>
                 </div>
             </div>
-            </form>
+           
         </section>
 
         <section id="wallpaper">
@@ -79,7 +80,7 @@
                         <span><i class="fa fa-clock" aria-hidden="true"></i> 15/05/2021 19:03</span>
                         <p>Presentes de conteúdo (campeões, skins, etc) estão temporariamente indisponíveis enquanto trabalhamos na solução de um problema. Presentes de RP podem ser enviados normalmente.</p>
 
-                        <a class="text-uppercase" href="#">mais detalhes</a>
+                        <a class="links-desabilitados text-uppercase" href="#">mais detalhes</a>
                     </div>
                 </div>
 
@@ -88,9 +89,9 @@
                         <img width="30" src="./img/person.svg" alt="">
                     </button>
                     <ul class="dropdown-menu">
-                        <li><a class="text-uppercase" href="#">configurações</a></li>
+                        <li><a class="links-desabilitados text-uppercase" href="#">configurações</a></li>
                         <li><a class="sessao text-uppercase">encerrar sessão</a></li>
-                        <li><a class="text-uppercase" href="#">sair</a></li>
+                        <li><a class="links-desabilitados text-uppercase" href="#">sair</a></li>
                     </ul>
                 </div>
             </header>

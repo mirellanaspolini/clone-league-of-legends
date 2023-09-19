@@ -69,7 +69,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: .35rem;
+    padding: 0.35rem;
 }
 
 .login-buttons button:first-child {
@@ -300,4 +300,8 @@ main {
     height: 3rem;
     width: 3rem;
     border-right-color: #d13639;
+}
+
+.links-desabilitados {
+    cursor: not-allowed !important;
 }

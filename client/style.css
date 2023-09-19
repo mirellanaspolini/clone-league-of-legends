@@ -457,7 +457,3 @@
 .card[data-promocao]::before {
     content: "-" attr(data-percPromocao) "%";
 }
-
-.links-desabilitados {
-    cursor: not-allowed !important;
-}
