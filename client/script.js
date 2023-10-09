@@ -118,7 +118,6 @@ async function carregarSocial() {
     };
 
     json.forEach((pasta) => {
-        console.log(pasta);
         for (const [key, value] of Object.entries(pasta)) {
             const nomepasta = key.replace(/ /g, "-");
 

@@ -384,9 +384,10 @@
     background: linear-gradient(transparent, #000);
 }
 
-.card[data-promocao] span {
+.card[data-promocao] span,
+.card span {
     display: flex;
-    gap: 14px;
+    gap: 10px;
 }
 
 .card-info-bg #precos-box p {
