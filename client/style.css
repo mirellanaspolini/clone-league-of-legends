@@ -283,7 +283,7 @@
     border: 3px solid #976f3d;
 }
 
-.social footer > * {
+.social footer>* {
     width: 100%;
     margin: 2px;
     padding: 0.3rem 0.46rem;
@@ -384,9 +384,10 @@
     background: linear-gradient(transparent, #000);
 }
 
-.card[data-promocao] span {
+.card[data-promocao] span,
+.card span {
     display: flex;
-    gap: 14px;
+    gap: 10px;
 }
 
 .card-info-bg #precos-box p {
@@ -416,11 +417,13 @@
         width: 0;
         scrollbar-width: none;
     }
+
     .grid-destaques::-webkit-scrollbar,
     #grid-campeoes::-webkit-scrollbar,
     .wrapper-pastas::-webkit-scrollbar {
         width: 6px;
     }
+
     .grid-destaques::-webkit-scrollbar-track,
     #grid-campeoes::-webkit-scrollbar-track,
     .wrapper-pastas::-webkit-scrollbar-track {
@@ -456,4 +459,8 @@
 
 .card[data-promocao]::before {
     content: "-" attr(data-percPromocao) "%";
+}
+
+.links-desabilitados {
+    cursor: not-allowed !important;
 }

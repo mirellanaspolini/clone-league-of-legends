@@ -3,8 +3,6 @@ async function carregarCards() {
     const json = await dados.json();
     const grid = document.querySelector(".grid-destaques");
     json.forEach((item) => {
-        console.log(item);
-
         grid.innerHTML += `<div class="card" data-percPromocao=${
             item.promotion[0] === true ? parseInt(item.promotion[1] * 100) : ""
         } data-promocao="true">

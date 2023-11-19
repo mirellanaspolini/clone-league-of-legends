@@ -1,5 +1,5 @@
 function constroiURL(){
-    let url = "https://api-champs.herokuapp.com/champs";
+    let url = "http://localhost:8080/champ";
     let name = document.getElementById("input-search-champ").value;
     let filters = [];
     for(let i = 0; i < 8; i++){
@@ -10,7 +10,6 @@ function constroiURL(){
     let sortingMethod = document.getElementById("select-sorting-method").options[document.getElementById("select-sorting-method").selectedIndex].value; 
     if(name.length == 0 && filters.length == 0){
         if(sortingMethod == 2){
-            console.log(url);
             return url;
         }
     }
@@ -40,16 +39,19 @@ function constroiURL(){
 }
 
 async function carregarChamps(){
-    let dados = await fetch(constroiURL());
-    let json = await dados.json();
-    let divChamps = document.getElementById("grid-campeoes");
+    const dados = await fetch(constroiURL());
+    const json = await dados.json();
+    const data = await json.content;
+
+    const divChamps = document.getElementById("grid-campeoes");
+    divChamps.style.overflowY = "scroll";
     divChamps.innerHTML = "";
-    json.forEach(champ => {
+    data.forEach(champ => {
         divChamps.innerHTML += `<div class="card">
                                     <img src="${champ.image}" width="240" height="240" alt="${champ.name}">
                                     <div class="card-info-bg">
                                         <p class=" text-capitalize">${champ.name}</p>
-                                        <span>
+                                        <span id="precos-box">
                                             <p class="preco-rp">${champ.rpPrice}</p>
                                             <p class="preco-ea">${champ.eaPrice}</p>
                                         </span>
