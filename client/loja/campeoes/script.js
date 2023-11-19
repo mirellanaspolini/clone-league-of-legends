@@ -1,5 +1,5 @@
 function constroiURL(){
-    let url = "http://localhost:8080/champ";
+    let url = "http://localhost:8080/champ?size=200";
     let name = document.getElementById("input-search-champ").value;
     let filters = [];
     for(let i = 0; i < 8; i++){
@@ -13,7 +13,7 @@ function constroiURL(){
             return url;
         }
     }
-    url += "?"
+    url += "&"
     if(name.length != 0){
         url += `name=${name}`;
     }
